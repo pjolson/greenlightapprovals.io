@@ -22,3 +22,14 @@ To test the production build locally:
 ```bash
 npm run build && npm run preview
 ```
+
+### HubSpot form embed
+
+Set the following environment variables (locally via `.env`, on GitHub via `Pages → Build → Environment variables`) to render the HubSpot form on the contact section automatically:
+
+```
+PUBLIC_HUBSPOT_PORTAL_ID=<your portal id>
+PUBLIC_HUBSPOT_FORM_ID=<your form id>
+```
+
+Without those values the site will render a placeholder that reminds you to configure them.

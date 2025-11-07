@@ -1,17 +1,456 @@
 ---
-import GreenlightApprovalsLanding from "../components/GreenlightApprovalsLanding.jsx";
+import { Fragment } from "astro/jsx-runtime";
 import "../styles/global.css";
+
+const seo = {
+  title: "Greenlight Approvals | NetSuite-Native Budget + Compliance Workflows",
+  description:
+    "NetSuite SuiteApp for CFOs who need multi-step approvals, budget enforcement, one-click audit packs, and unlimited approvers in a single tray UI.",
+  keywords: [
+    "NetSuite approvals",
+    "Greenlight Approvals",
+    "budget enforcement",
+    "SOX compliance",
+    "SuiteApp",
+  ],
+  image: "/images/flatcolor.png",
+};
+
+const featureCards = [
+  {
+    title: "Multi-dimensional routing",
+    body: "Subsidiary, department, class, location, custom segments, and amount bands combine to mirror any policy.",
+    image: "/images/timeline.png",
+  },
+  {
+    title: "Budget intelligence",
+    body: "Live NetSuite budgets warn or block when a transaction would put departments, vendors, or GLs over plan.",
+    image: "/images/budget.png",
+  },
+  {
+    title: "Audit-grade logging",
+    body: "Every click is timestamped with exception flags, reason codes, and denormalized data for one-click exports.",
+    image: "/images/Audit.png",
+  },
+  {
+    title: "Modern approval tray",
+    body: "Purple slide-out tray, keyboard shortcuts, and inline context keep controllers in NetSuite—not email.",
+    image: "/images/ModernTray.png",
+  },
+];
+
+const differentiators = [
+  {
+    title: "NetSuite-native DNA",
+    detail: "Built entirely on SuiteScript, SuiteQL, and custom records so data never leaves the customer's account.",
+  },
+  {
+    title: "Unlimited approvers",
+    detail: "Flat-rate pricing means finance can pull everyone into the process without counting seats.",
+  },
+  {
+    title: "Compliance-first",
+    detail: "Exception detection, audit log exports, and one-click audit packs slash prep time by 80%+.",
+  },
+  {
+    title: "Budget vs actual enforcement",
+    detail: "Approvers see live budget, actual, and projected spend right in the tray before they click approve.",
+  },
+];
+
+const roadmap = [
+  {
+    phase: "Now",
+    title: "Phase 5 Reporting &amp; Analytics wrap-up",
+    detail: "Saved search catalog notes, KPI widgets, and exception dashboards for finance leaders.",
+  },
+  {
+    phase: "Next",
+    title: "Budget Enforcement GA",
+    detail: "Department + vendor budget controls with CFO escalations and tray visualizations.",
+  },
+  {
+    phase: "Q1 2026",
+    title: "Compliance Packs &amp; Partner launch",
+    detail: "Modular audit packages, partner enablement, and Slack/Teams notifications.",
+  },
+];
+
+const pricing = [
+  {
+    tier: "Core",
+    price: "$499/mo",
+    description: "Linear approvals for smaller finance teams that need to get out of email chains.",
+    bullets: [
+      "Unlimited approvers",
+      "Single-step manager→director→VP workflows",
+      "4-dimension matching (amount, department, class, location)",
+      "Outbound assignment emails",
+      "Immutable audit log with standard support",
+    ],
+  },
+  {
+    tier: "Pro Compliance",
+    price: "$1,199/mo",
+    description: "Best-selling tier with budget intelligence and one-click audit packages for SOX-ready teams.",
+    bullets: [
+      "Live budget vs actual enforcement",
+      "Conditional multi-step routing (10+ dimensions)",
+      "Email-based approvals with audit pack exports",
+      "Exception detection, dashboards, and priority support",
+      "Immutable logs + one-click audit packages",
+    ],
+  },
+  {
+    tier: "Enterprise Governance",
+    price: "$2,999+/mo",
+    description: "Global control tower with bespoke compliance packs, executive dashboards, and partner add-ons.",
+    bullets: [
+      "Modular audit builder + executive dashboards",
+      "Cross-entity + intercompany routing",
+      "Unlimited custom audit reports + AI roadmap",
+      "Dedicated CS + white-glove implementation",
+    ],
+  },
+];
+
+const futureFocus = [
+  {
+    title: "AI Approval Assistant",
+    detail: "In active development: summarizes approvals, suggests routing, and flags policy exceptions before submission.",
+  },
+  {
+    title: "Compliance packs",
+    detail: "Pre-built reporting bundles for SOX, ISO, and healthcare certifications ship as add-ons.",
+  },
+  {
+    title: "Planning connectors",
+    detail: "Connect NetSuite approvals to FP&A tools so forecasts update the second a transaction is approved.",
+  },
+];
+
+const hubspotPortalId = import.meta.env.PUBLIC_HUBSPOT_PORTAL_ID;
+const hubspotFormId = import.meta.env.PUBLIC_HUBSPOT_FORM_ID;
+const hasHubSpotForm = Boolean(hubspotPortalId && hubspotFormId);
+const canonical = Astro.site ? new URL("/", Astro.site).href : "https://greenlightapprovals.io/";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Greenlight Approvals",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: seo.description,
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    price: "499",
+    category: "Subscription",
+  },
+  url: canonical,
+  image: seo.image,
+  publisher: {
+    "@type": "Organization",
+    name: "Greenlight Software LLC",
+    url: canonical,
+  },
+};
 ---
 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Greenlight Approvals</title>
-    <meta name="description" content="Streamline approvals in NetSuite with intelligent routing, audit-ready compliance, and budget insights." />
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <meta name="keywords" content={seo.keywords.join(", ")} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:image" content={seo.image} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={seo.image} />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json" is:inline>
+      {JSON.stringify(structuredData)}
+    </script>
   </head>
   <body>
-    <GreenlightApprovalsLanding />
+    <main>
+      <header class="hero" id="top">
+        <nav class="nav">
+          <div class="brand">
+            <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-label="Greenlight Approvals logo">
+              <defs>
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#6C63FF" />
+                  <stop offset="100%" stop-color="#0FB59B" />
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="54" fill="url(#logoGradient)" />
+              <path
+                d="M44 61.5L58.2 75.7 82 48.5"
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Greenlight Approvals</span>
+          </div>
+          <div class="nav-links">
+            <a href="#features">Product</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a class="cta ghost" href="#contact">Book a Demo</a>
+        </nav>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">NetSuite SuiteApp • Compliance-first approvals</p>
+            <h1>Budget-aware approvals with an audit trail CFOs trust.</h1>
+            <p class="lede">
+              Replace spreadsheets, email daisy chains, and brittle scripts with a native NetSuite tray,
+              unlimited approvers, and one-click audit packs. Designed from the documentation up.
+            </p>
+            <div class="cta-row">
+              <a class="cta" href="#contact">Request Access</a>
+            </div>
+            <div class="pill-trail">
+              <span class="pill">SOX-ready</span>
+              <span class="pill">Unlimited approvers</span>
+              <span class="pill">Budget enforcement</span>
+            </div>
+            <div class="founding-banner">
+              Founding Customer pricing — limited-time offer that locks in forever.
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card">
+              <p class="eyebrow">Live inside NetSuite</p>
+              <strong>PO-9841 · $48k Marketing</strong>
+              <p>Tray warns: +$3k over departmental budget → auto-route to CFO.</p>
+              <ul>
+                <li>Budget intelligence</li>
+                <li>Escalation timer</li>
+                <li>Click-to-approve email link</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="features" class="section">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Every control lives in one NetSuite-native workflow.</h2>
+          <p>
+            These are the mechanics: how routing decisions are made, how budgets are enforced, how logs are captured,
+            and how approvers move through the tray without leaving NetSuite.
+          </p>
+        </div>
+        <div class="card-grid">
+          {featureCards.map((card) => (
+            <button
+              class="card feature-card"
+              type="button"
+              data-image={card.image}
+              data-title={card.title}
+              data-body={card.body}
+            >
+              <div>
+                <h3>{card.title}</h3>
+                <p>{card.body}</p>
+              </div>
+              <span>View example →</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section class="section alt" aria-label="differentiators">
+        <div class="section-head">
+          <p class="eyebrow">Why it matters</p>
+          <h2>Native, compliant, and priced for unlimited approvers.</h2>
+          <p>
+            Outcomes and differentiation: faster close, cleaner audits, richer visibility, and pricing built for
+            whole finance teams instead of per-seat add-ons.
+          </p>
+        </div>
+        <div class="card-grid four">
+          {differentiators.map((item) => (
+            <article class="card outline">
+              <h3>{item.title}</h3>
+              <p>{item.detail}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <div id="feature-overlay" class="feature-overlay" aria-hidden="true">
+        <div class="feature-overlay__backdrop" data-close-overlay></div>
+        <div class="feature-overlay__content" role="dialog" aria-modal="true" aria-label="Feature preview">
+          <button type="button" class="feature-overlay__close" aria-label="Close preview" data-close-overlay>
+            ×
+          </button>
+          <img src="" alt="" loading="lazy" />
+          <p class="feature-overlay__caption"></p>
+        </div>
+      </div>
+
+      <section id="pricing" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple tiers. Unlimited approvers. Compliance add-ons ready.</h2>
+        </div>
+        <div class="founding-card compact">
+          Founding Partner rates available for early adopters and implementation partners. Lock in these rates forever.
+        </div>
+        <div class="pricing-grid">
+          {pricing.map((tier) => (
+            <article class="pricing-card">
+              <div>
+                <p class="eyebrow">{tier.tier}</p>
+                <h3>{tier.price}</h3>
+                <p>{tier.description}</p>
+              </div>
+              <ul>
+                {tier.bullets.map((bullet) => (
+                  <li>{bullet}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <p class="eyebrow">Talk to us</p>
+          <h2>Drop your info and we’ll send the NetSuite bundle + rollout plan.</h2>
+          <p>Use the HubSpot embed or email <a href="mailto:hello@greenlightapprovals.io">hello@greenlightapprovals.io</a>.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Implementation-ready</h3>
+            <ul>
+              <li>SuiteScript + SuiteQL stack (no external services)</li>
+              <li>Unlimited approvers across subsidiaries</li>
+              <li>Budget enforcement + audit packs included</li>
+            </ul>
+            <p class="micro">Need references? Happy to share the rollout plan on your intro call.</p>
+          </div>
+          <div class="form-shell">
+            {hasHubSpotForm ? (
+              <Fragment>
+                <div id="hubspot-form" aria-live="polite"></div>
+                <script src="https://js.hsforms.net/forms/embed/v2.js" async></script>
+                <script is:inline define:vars={{ portalId: hubspotPortalId, formId: hubspotFormId }}>
+                  window.addEventListener('load', () => {
+                    if (window.hbspt) {
+                      window.hbspt.forms.create({
+                        region: 'na1',
+                        portalId,
+                        formId,
+                        target: '#hubspot-form'
+                      });
+                    }
+                  });
+                </script>
+              </Fragment>
+            ) : (
+              <div class="form-placeholder">
+                <p>Add your HubSpot form by setting <code>PUBLIC_HUBSPOT_PORTAL_ID</code> and <code>PUBLIC_HUBSPOT_FORM_ID</code>.</p>
+                <p>We’ll render the embed automatically once those env vars exist.</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-label="Greenlight Approvals logo">
+          <defs>
+            <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6C63FF" />
+              <stop offset="100%" stop-color="#0FB59B" />
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="54" fill="url(#logoGradientFooter)" />
+          <path
+            d="M44 61.5L58.2 75.7 82 48.5"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <p>© {new Date().getFullYear()} Greenlight Software LLC • Wyoming</p>
+      </div>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script is:inline>
+      const overlay = document.getElementById('feature-overlay');
+      if (overlay) {
+        const img = overlay.querySelector('img');
+        const caption = overlay.querySelector('.feature-overlay__caption');
+        const closeTargets = overlay.querySelectorAll('[data-close-overlay]');
+        const featureButtons = document.querySelectorAll('.feature-card');
+
+        const closeOverlay = () => {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          if (img) {
+            img.src = '';
+            img.alt = '';
+          }
+          if (caption) {
+            caption.textContent = '';
+          }
+        };
+
+        featureButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const image = button.getAttribute('data-image');
+            const title = button.getAttribute('data-title');
+            const body = button.getAttribute('data-body');
+            if (img && image) {
+              img.src = image;
+              img.alt = `${title} screenshot`;
+            }
+            if (caption) {
+              caption.textContent = `${title} — ${body}`;
+            }
+            overlay.classList.add('is-open');
+            overlay.setAttribute('aria-hidden', 'false');
+          });
+        });
+
+        closeTargets.forEach((target) => target.addEventListener('click', closeOverlay));
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
+            closeOverlay();
+          }
+        });
+      }
+    </script>
   </body>
 </html>
