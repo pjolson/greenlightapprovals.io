@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
@@ -37,21 +35,19 @@ export default function GreenlightApprovalsLanding() {
         <p className='text-lg max-w-xl mx-auto mb-8'>
           Streamline approvals in NetSuite with intelligent routing, audit-ready compliance, and budget-aware insights.
         </p>
-        <Button className='bg-white text-[#667eea] font-semibold hover:scale-105 transition-transform'>
+        <button className='bg-white text-[#667eea] font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform'>
           Request Demo
-        </Button>
+        </button>
       </header>
 
       <section className='py-20 px-8 bg-[#f9fafb] grid md:grid-cols-3 gap-8'>
         {features.map((f) => (
           <a key={f.id} href={`#feature-${f.id}`} className='no-underline cursor-default'>
-            <Card className='shadow-md rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow'>
-              <CardContent className='p-6 text-center'>
-                <CheckCircle className='w-10 h-10 text-[#10b981] mx-auto mb-4' />
-                <h3 className='font-semibold text-xl mb-2 text-[#111827]'>{f.title}</h3>
-                <p className='text-gray-600'>{f.desc}</p>
-              </CardContent>
-            </Card>
+            <div className='shadow-md rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow p-6 text-center'>
+              <CheckCircle className='w-10 h-10 text-[#10b981] mx-auto mb-4' />
+              <h3 className='font-semibold text-xl mb-2 text-[#111827]'>{f.title}</h3>
+              <p className='text-gray-600'>{f.desc}</p>
+            </div>
           </a>
         ))}
       </section>
@@ -65,9 +61,9 @@ export default function GreenlightApprovalsLanding() {
           >
             <h2 className='text-3xl font-bold text-[#111827] mb-4'>{f.title}</h2>
             <p className='text-gray-600 max-w-2xl mx-auto mb-8'>{f.desc}</p>
-            <Button className='bg-gradient-to-r from-[#667eea] to-[#10b981] text-white font-medium'>
+            <button className='bg-gradient-to-r from-[#667eea] to-[#10b981] text-white font-medium py-3 px-8 rounded-full shadow-md'>
               Learn More
-            </Button>
+            </button>
           </section>
         ))}
       </div>
