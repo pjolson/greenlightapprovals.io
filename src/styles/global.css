@@ -476,7 +476,7 @@ main {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border);
-  width: min(620px, 100%);
+  width: min(820px, 100%);
   margin: 0 auto;
 }
 
