@@ -199,6 +199,10 @@ main {
   color: var(--muted);
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .founding-banner {
   margin-top: 1rem;
   padding: 0.85rem 1.2rem;
@@ -464,46 +468,33 @@ main {
   border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-.contact-card,
 .form-shell {
   padding: 2rem;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border);
+  width: min(620px, 100%);
+  margin: 0 auto;
 }
 
-.contact-card ul {
-  margin-left: 1rem;
-  color: var(--muted);
+.contact-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
-.contact-card li {
-  margin-bottom: 0.5rem;
+.contact-highlights span {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  font-size: 0.9rem;
+  color: #d1fae5;
 }
 
-.form-placeholder {
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 16px;
-  padding: 1.5rem;
-  border: 1px dashed var(--border);
-  color: var(--muted);
-}
-
-.form-placeholder code {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 0.15rem 0.35rem;
-  border-radius: 6px;
-}
-
-.micro {
-  font-size: 0.85rem;
+.contact-note {
+  text-align: center;
   color: var(--muted);
   margin-top: 1rem;
 }

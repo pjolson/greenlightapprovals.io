@@ -1,0 +1,156 @@
+---
+import "../styles/global.css";
+
+const seo = {
+  title: "Privacy Policy | Greenlight Software LLC",
+  description:
+    "Privacy policy for Greenlight Software LLC and the Greenlight Approvals product covering data collection, usage, and rights.",
+};
+
+const lastUpdated = "November 7, 2025";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      .policy-shell {
+        width: min(900px, calc(100% - 2.5rem));
+        margin: 3rem auto 5rem;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: clamp(1.5rem, 4vw, 3rem);
+        box-shadow: 0 40px 120px rgba(0, 0, 0, 0.35);
+      }
+
+      .policy-shell h1,
+      .policy-shell h2 {
+        margin-bottom: 0.75rem;
+      }
+
+      .policy-shell p,
+      .policy-shell li {
+        color: #cdd5e0;
+        line-height: 1.7;
+      }
+
+      .policy-shell ul {
+        margin-left: 1.2rem;
+        margin-bottom: 1.25rem;
+        list-style: disc;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        margin: 1.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="policy-shell">
+      <p class="eyebrow">Greenlight Software LLC</p>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: {lastUpdated}</p>
+
+      <hr class="divider" />
+
+      <h2>1. Who We Are</h2>
+      <p>
+        Greenlight Software LLC ("we," "our," or "us") is a limited-liability company registered in Wyoming, USA and
+        operated from Spain. We build Greenlight Approvals and related services that integrate with NetSuite and other
+        ERP platforms.
+      </p>
+      <p>
+        Questions? Contact us at <a href="mailto:privacy@greenlightapprovals.com">privacy@greenlightapprovals.com</a>
+        or Greenlight Software LLC, Cheyenne, WY 82001, USA. EU/EEA residents can rely on us as the data controller under
+        the GDPR.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>2. Information We Collect</h2>
+      <ul>
+        <li>Contact details (name, email, company, title, phone).</li>
+        <li>Form submissions (demo requests, support tickets, onboarding forms).</li>
+        <li>Usage data (IP address, browser type, pages visited, analytics metrics).</li>
+        <li>Marketing preferences (opt-in status, engagement).</li>
+      </ul>
+
+      <h2>3. How We Use Information</h2>
+      <ul>
+        <li>Respond to inquiries, demo requests, and support conversations.</li>
+        <li>Deliver and maintain our products and related services.</li>
+        <li>Send product news or marketing updates when you opt in.</li>
+        <li>Improve security, performance, and overall experience.</li>
+        <li>Comply with legal or regulatory obligations.</li>
+      </ul>
+      <p>We do not sell or rent personal data to third parties.</p>
+
+      <hr class="divider" />
+
+      <h2>4. Legal Basis (EU/EEA)</h2>
+      <ul>
+        <li>Contractual necessity for services you request.</li>
+        <li>Consent for marketing communications.</li>
+        <li>Legitimate interests (improving and securing our services).</li>
+        <li>Legal obligations when applicable.</li>
+      </ul>
+
+      <h2>5. Data Storage & Processing</h2>
+      <p>
+        We use trusted sub-processors such as HubSpot (CRM/marketing), Google (email, storage, analytics), and other
+        providers required to deliver our services. These vendors participate in the EU–U.S. Data Privacy Framework or
+        other lawful transfer mechanisms.
+      </p>
+
+      <h2>6. Data Retention</h2>
+      <p>
+        We keep personal data only as long as necessary for the purposes described above or as required by law. Marketing
+        preferences are honored until you unsubscribe or withdraw consent.
+      </p>
+
+      <h2>7. Your Rights (EU/EEA)</h2>
+      <ul>
+        <li>Access, correct, or delete your personal data.</li>
+        <li>Withdraw consent and object to processing.</li>
+        <li>Request data portability.</li>
+        <li>Lodge a complaint with your supervisory authority.</li>
+      </ul>
+      <p>Exercise these rights by contacting <a href="mailto:privacy@greenlightapprovals.com">privacy@greenlightapprovals.com</a>.</p>
+
+      <h2>8. Marketing Communications</h2>
+      <p>
+        If you opt in, we may send occasional product updates or invitations. Each message includes an unsubscribe link,
+        or you can email us directly to opt out.
+      </p>
+
+      <h2>9. Cookies & Analytics</h2>
+      <p>
+        Our site may use cookies and analytics tools to enhance functionality. You can adjust browser settings to refuse
+        cookies, though some features may not work as intended. A standalone cookie notice may be provided.
+      </p>
+
+      <h2>10. Data Security</h2>
+      <p>
+        We implement encryption, access controls, and secure hosting to protect your data from unauthorized access or
+        disclosure.
+      </p>
+
+      <h2>11. Changes</h2>
+      <p>
+        We may update this policy periodically. The latest version will always be available at
+        https://greenlightapprovals.io/privacy with the “Last updated” date above.
+      </p>
+
+      <h2>12. Contact</h2>
+      <p>Still have questions? Email <a href="mailto:privacy@greenlightapprovals.com">privacy@greenlightapprovals.com</a>.</p>
+    </main>
+  </body>
+</html>
