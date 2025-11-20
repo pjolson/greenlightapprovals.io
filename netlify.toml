@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/client/*"
+  to = "/client/:splat"
+  status = 200
+
+[[headers]]
+  for = "/client/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

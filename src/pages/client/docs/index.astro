@@ -1,0 +1,75 @@
+---
+import DocsLayout from "../../../layouts/DocsLayout.astro";
+import { getCollection } from "astro:content";
+
+const docs = (await getCollection("docsPrivate")).sort((a, b) => {
+  if (a.data.section === b.data.section) {
+    return a.data.order - b.data.order || a.data.title.localeCompare(b.data.title);
+  }
+  return a.data.section.localeCompare(b.data.section);
+});
+
+const sections = docs.reduce<Record<string, typeof docs>>((acc, doc) => {
+  const section = doc.data.section ?? "General";
+  if (!acc[section]) acc[section] = [];
+  acc[section].push(doc);
+  return acc;
+}, {});
+
+const pageTitle = "Private Docs | Greenlight Approvals";
+const pageDescription = "Client-only documentation for implementations, security, and rollout guidance.";
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : "/client/docs";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <DocsLayout
+      title="Client Documentation"
+      description="Implementation, security, and admin guides. Protect these routes with Netlify auth."
+      badge="Private docs"
+      searchItems={docs.map((doc) => ({
+        title: doc.data.title,
+        description: doc.data.description,
+        section: doc.data.section,
+        slug: doc.slug,
+      }))}
+      searchBase="/client/docs"
+    >
+      <nav slot="sidebar" class="docs-nav">
+        {Object.entries(sections).map(([section, items]) => (
+          <div class="docs-group">
+            <p class="docs-group__label">{section}</p>
+            <ul>
+              {items.map((item) => (
+                <li>
+                  <a href={`/client/docs/${item.slug}`}>{item.data.title}</a>
+                  {item.data.description && <small>{item.data.description}</small>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </nav>
+
+      <p class="docs-callout">
+        This library is intended for customers. Protect this section with Netlify password protection or Identity before
+        publishing. Keep implementation details, security notes, and rollout checklists here.
+      </p>
+    </DocsLayout>
+  </body>
+</html>

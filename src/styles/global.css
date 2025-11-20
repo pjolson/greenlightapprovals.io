@@ -502,6 +502,234 @@ main {
   margin-top: 1rem;
 }
 
+.docs-shell {
+  width: min(1200px, calc(100% - 2.5rem));
+  margin: 2.5rem auto 6rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+}
+
+.docs-sidebar {
+  border-right: 1px solid var(--border);
+  padding-right: 1rem;
+}
+
+.docs-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.docs-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.docs-group + .docs-group {
+  margin-top: 0.6rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.docs-group__label {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.docs-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.docs-nav a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.docs-nav a:hover {
+  color: var(--accent);
+}
+
+.docs-nav a.is-active {
+  color: var(--accent);
+}
+
+.docs-nav small {
+  display: block;
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.docs-body h1 {
+  margin: 0.4rem 0 0.5rem;
+}
+
+.docs-lede {
+  color: var(--muted);
+  max-width: 64ch;
+}
+
+.docs-prose {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0.9rem;
+  color: var(--text);
+  line-height: 1.7;
+  max-width: 72ch;
+}
+
+.docs-prose h2 {
+  margin-top: 1.2rem;
+}
+
+.docs-prose h3 {
+  margin-top: 0.8rem;
+}
+
+.docs-prose h2,
+.docs-prose h3 {
+  scroll-margin-top: 72px;
+}
+
+.docs-prose p {
+  color: var(--muted);
+}
+
+.docs-prose ul,
+.docs-prose ol {
+  margin-left: 1.1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.docs-prose code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.docs-prose strong {
+  color: #fff;
+}
+
+.docs-toc {
+  margin: 1rem 0 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.docs-toc__label {
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.docs-toc ul {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.docs-toc li.depth-2 {
+  padding-left: 0.8rem;
+}
+
+.docs-toc a {
+  color: var(--text);
+}
+
+.docs-toc a:hover {
+  color: var(--accent);
+}
+
+.docs-search {
+  width: 100%;
+  margin: 0 0 1.25rem;
+  position: relative;
+}
+
+.docs-search input[type="search"] {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.docs-search__results {
+  position: absolute;
+  width: 100%;
+  background: #0b1220;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-top: 0.4rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  max-height: 320px;
+  overflow: auto;
+  z-index: 10;
+}
+
+.docs-search__results ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.docs-search__results li {
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+}
+
+.docs-search__empty {
+  color: var(--muted);
+}
+
+.docs-search__results li:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.docs-search__results a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.docs-search__results small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.docs-callout {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .footer {
   margin: 0 auto 2rem;
   width: min(1200px, calc(100% - 2.5rem));
@@ -545,6 +773,18 @@ main {
 
   main {
     width: min(100%, calc(100% - 1.5rem));
+  }
+
+  .docs-shell {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .docs-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-right: 0;
+    padding-bottom: 1rem;
   }
 }
 
