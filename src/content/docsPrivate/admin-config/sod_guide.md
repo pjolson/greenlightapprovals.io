@@ -2,7 +2,7 @@
 title: "Segregation of Duties (SoD) Guide"
 description: "How Greenlight detects and enforces Segregation of Duties (SoD) policies during approval workflows."
 section: "Administration"
-order: 6
+order: 60
 ---
 
 Segregation of Duties (SoD) protects financial processes by preventing users from performing conflicting actions, such as creating and approving the same transaction.  

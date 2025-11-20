@@ -2,7 +2,7 @@
 title: "User Roles & Permissions Guide"
 description: "Permissions required for administrators, approvers, and managers using Greenlight Approvals."
 section: "Administration"
-order: 14
+order: 140
 ---
 
 Greenlight Approvals uses standard NetSuite permissions combined with custom record permissions to control access.  

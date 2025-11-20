@@ -2,7 +2,7 @@
 title: "My Worklist Overview"
 description: "How users view and manage their assigned approvals through the Greenlight Worklist."
 section: "Users"
-order: 5
+order: 50
 ---
 
 The **Worklist** gives users a consolidated view of all approvals assigned to them across all supported transaction types.  

@@ -2,7 +2,7 @@
 title: "Data Model Reference"
 description: "Detailed reference of all Greenlight custom record types, fields, and relationships."
 section: "Architecture"
-order: 2
+order: 20
 ---
 
 The Greenlight data model is built around a set of custom records that track approval rules, steps, workflow instances, logs, queues, and configuration.  

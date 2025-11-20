@@ -2,7 +2,7 @@
 title: "Command Center Dashboards Reference"
 description: "Detailed reference for each dashboard module available in the Greenlight Command Center."
 section: "Administration"
-order: 13
+order: 130
 ---
 
 The Command Center includes multiple dashboards that visualize approval activity, performance, exceptions, and operational risk.  

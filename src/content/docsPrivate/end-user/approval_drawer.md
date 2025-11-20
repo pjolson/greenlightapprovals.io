@@ -2,7 +2,7 @@
 title: "Using the Approval Drawer"
 description: "How users interact with the Greenlight Approval Drawer to review, approve, reject, and understand approval workflow context."
 section: "Users"
-order: 3
+order: 30
 ---
 
 The Approval Drawer is the primary interface for approvers, submitters, and reviewers to interact with Greenlight.  

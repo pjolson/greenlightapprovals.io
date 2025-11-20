@@ -2,7 +2,7 @@
 title: "Budget Intelligence Guide"
 description: "How Greenlight analyzes budgets, calculates variances, and displays budget insights in approvals."
 section: "Administration"
-order: 7
+order: 70
 ---
 
 Budget Intelligence enhances approval accuracy by comparing transaction amounts against NetSuite budgets in real time.  

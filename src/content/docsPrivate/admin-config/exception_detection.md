@@ -2,7 +2,7 @@
 title: "Exception Detection Guide"
 description: "How Greenlight identifies, logs, and displays exceptions throughout approval workflows."
 section: "Administration"
-order: 10
+order: 100
 ---
 
 Exception Detection identifies unusual or problematic situations that occur during approval workflows.  

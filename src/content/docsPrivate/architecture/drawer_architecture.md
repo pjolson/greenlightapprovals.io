@@ -2,7 +2,7 @@
 title: "Drawer Architecture Specification"
 description: "Technical specification for the Greenlight Approval Drawer, including UI architecture, data flow, SuiteScript interaction model, and extensibility."
 section: "Architecture"
-order: 10
+order: 100
 ---
 
 The Greenlight Approval Drawer is a hybrid SuiteScript UI component that provides real‑time approval context directly inside NetSuite transactions.  

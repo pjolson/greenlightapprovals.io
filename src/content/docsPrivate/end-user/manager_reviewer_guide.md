@@ -2,7 +2,7 @@
 title: "Manager & Reviewer Experience Guide"
 description: "How managers and reviewers monitor, review, and oversee approval activity using the Approval Drawer, Worklist, and Command Center."
 section: "Users"
-order: 6
+order: 60
 ---
 
 Managers and reviewers use Greenlight to monitor approval progress, review exceptions, track performance, and ensure policy compliance.  

@@ -2,7 +2,7 @@
 title: "Helper Library Reference"
 description: "Reference for shared SuiteScript libraries used across the Greenlight Approvals system."
 section: "Architecture"
-order: 4
+order: 40
 ---
 
 Greenlight uses several internal SuiteScript libraries to keep the workflow engine modular, maintainable, and optimized.  

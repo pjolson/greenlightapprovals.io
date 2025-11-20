@@ -2,7 +2,7 @@
 title: "Queue Architecture Guide"
 description: "How approval and email actions are processed asynchronously using Greenlight’s queue-based workflow architecture."
 section: "Architecture"
-order: 5
+order: 50
 ---
 
 Greenlight’s queue architecture ensures that approval actions are processed reliably, consistently, and without impacting NetSuite governance limits.  

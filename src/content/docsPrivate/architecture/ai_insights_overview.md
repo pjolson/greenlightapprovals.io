@@ -2,7 +2,7 @@
 title: "AI Insights System Overview"
 description: "Technical overview of how Greenlight generates and displays AI-powered insights for transactions, vendors, budgets, and approval context."
 section: "Architecture"
-order: 8
+order: 80
 ---
 
 Greenlight includes an AI Insights system that provides contextual information inside the Approval Drawer.  

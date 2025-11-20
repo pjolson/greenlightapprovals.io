@@ -2,7 +2,7 @@
 title: "Approval Steps Guide"
 description: "How to configure and manage approval steps within Greenlight Approval Rules."
 section: "Administration"
-order: 4
+order: 40
 ---
 
 Approval Steps define **who approves**, **when they approve**, and **under what conditions** during an approval workflow.  

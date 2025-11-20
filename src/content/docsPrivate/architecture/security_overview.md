@@ -2,7 +2,7 @@
 title: "Security Overview"
 description: "Comprehensive overview of Greenlight’s security model, including authentication, authorization, SoD enforcement, data protection, and SuiteScript security considerations."
 section: "Architecture"
-order: 7
+order: 70
 ---
 
 This document provides an architectural overview of Greenlight’s security model.  

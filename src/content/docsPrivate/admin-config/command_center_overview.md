@@ -2,7 +2,7 @@
 title: "Command Center Overview"
 description: "Overview of the Greenlight Command Center, including dashboards, metrics, and administrative insights."
 section: "Administration"
-order: 12
+order: 120
 ---
 
 The Command Center provides real-time visibility into approval activity, workloads, performance, exceptions, and operational risk.  

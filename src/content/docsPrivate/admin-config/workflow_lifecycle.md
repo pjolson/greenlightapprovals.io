@@ -2,7 +2,7 @@
 title: "Workflow Behavior & Lifecycle"
 description: "How Greenlight evaluates rules, creates approval instances, and advances each step during the approval lifecycle."
 section: "Administration"
-order: 5
+order: 50
 ---
 
 The Greenlight approval lifecycle fully replaces NetSuite’s native approval routing logic.  

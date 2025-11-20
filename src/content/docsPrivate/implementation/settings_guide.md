@@ -2,7 +2,7 @@
 title: "Settings Guide"
 description: "Detailed reference for all configuration options available in the Greenlight Settings record."
 section: "Administration"
-order: 1
+order: 10
 ---
 
 The **Settings** record controls global behavior for Greenlight Approvals. This guide explains all configuration options,

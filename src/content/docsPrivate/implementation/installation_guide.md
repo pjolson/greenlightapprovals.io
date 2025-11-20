@@ -2,7 +2,7 @@
 title: "Installation Guide"
 description: "How to install and verify the Greenlight Approvals SuiteApp in NetSuite."
 section: "Implementation"
-order: 1
+order: 10
 ---
 
 **Version:** 1.1  

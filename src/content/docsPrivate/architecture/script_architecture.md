@@ -2,7 +2,7 @@
 title: "Script Architecture Reference"
 description: "Detailed reference of all SuiteScript components used by Greenlight, including client scripts, user events, Suitelets, and scheduled scripts."
 section: "Architecture"
-order: 3
+order: 30
 ---
 
 This reference explains how Greenlight uses SuiteScript to power rule evaluation, approval lifecycle processing, the Approval Drawer UI, queue handling, and export functionality.  

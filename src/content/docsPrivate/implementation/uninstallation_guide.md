@@ -2,7 +2,7 @@
 title: "Uninstallation Guide"
 description: "How to safely uninstall the Greenlight Approvals bundle or SuiteApp from your NetSuite account."
 section: "Implementation"
-order: 5
+order: 50
 ---
 
 This guide explains how to safely uninstall Greenlight Approvals from your NetSuite environment.  

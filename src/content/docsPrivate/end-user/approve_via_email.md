@@ -2,7 +2,7 @@
 title: "How to Approve via Email"
 description: "Step-by-step guide for approvers who want to approve or reject transactions directly from their email inbox."
 section: "Users"
-order: 4
+order: 40
 ---
 
 Approving via email allows approvers to take action without logging into NetSuite.  

@@ -2,7 +2,7 @@
 title: "Upgrade Guide (Bundle → SuiteApp)"
 description: "How to upgrade Greenlight Approvals from the beta bundle distribution to the official SuiteApp release."
 section: "Implementation"
-order: 4
+order: 40
 ---
 
 This guide explains how to upgrade from the **bundle-based beta installation** of Greenlight Approvals to the **official SuiteApp release** once it becomes available in the NetSuite Marketplace.

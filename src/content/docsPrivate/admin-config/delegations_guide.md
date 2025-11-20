@@ -2,7 +2,7 @@
 title: "Delegations Guide"
 description: "How to configure, manage, and audit approval delegations in Greenlight Approvals."
 section: "Administration"
-order: 9
+order: 90
 ---
 
 Delegations allow approvers to temporarily assign their approval authority to another user.  

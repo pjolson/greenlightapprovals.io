@@ -2,7 +2,7 @@
 title: "Submitter Experience Guide"
 description: "What submitters see when creating and submitting transactions for approval."
 section: "Users"
-order: 2
+order: 20
 ---
 
 Submitter guide content coming soon.

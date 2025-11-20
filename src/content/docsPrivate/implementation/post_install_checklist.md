@@ -2,7 +2,7 @@
 title: "Post-Installation Checklist"
 description: "Verify that Greenlight Approvals has been installed and configured correctly in your NetSuite account."
 section: "Implementation"
-order: 2
+order: 20
 ---
 
 # Post-Installation Checklist

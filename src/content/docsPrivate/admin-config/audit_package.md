@@ -2,7 +2,7 @@
 title: "Audit Package Guide"
 description: "How to generate, interpret, and export the Greenlight Audit Package for compliance and audit readiness."
 section: "Administration"
-order: 11
+order: 110
 ---
 
 The Audit Package provides a complete, exportable record of approval activity for internal auditors, external auditors, and compliance teams.  

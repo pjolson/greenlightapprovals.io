@@ -2,7 +2,7 @@
 title: "Report Settings Guide"
 description: "Detailed reference for all SLA, performance, and aging configuration options used throughout Greenlight Approvals."
 section: "Administration"
-order: 2
+order: 20
 ---
 
 The **Report Settings** record controls SLA timing, aging thresholds, performance scoring, and critical amount thresholds used across the Approval Drawer, Command Center, and audit outputs.  

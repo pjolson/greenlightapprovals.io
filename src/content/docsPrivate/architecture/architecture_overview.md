@@ -2,7 +2,7 @@
 title: "Technical Architecture Overview"
 description: "High-level architecture of Greenlight Approvals, including system components, data flow, and SuiteScript execution model."
 section: "Architecture"
-order: 1
+order: 10
 ---
 
 The Greenlight Approvals architecture is built on SuiteScript 2.x and designed for performance, stability, and auditability.  

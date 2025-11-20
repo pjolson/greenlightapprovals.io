@@ -2,7 +2,7 @@
 title: "Approval Rules Guide"
 description: "How to create, configure, and manage approval rules in Greenlight Approvals."
 section: "Administration"
-order: 3
+order: 30
 ---
 
 Approval Rules determine which transactions require approval and which approvers are assigned.  

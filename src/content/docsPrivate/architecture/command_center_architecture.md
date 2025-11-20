@@ -2,7 +2,7 @@
 title: "Command Center Architecture"
 description: "Technical architectural overview of the Greenlight Command Center, including data sources, dashboard logic, refresh behavior, and tier-based functionality."
 section: "Architecture"
-order: 9
+order: 90
 ---
 
 The Command Center is the analytics and monitoring hub of Greenlight Approvals.  

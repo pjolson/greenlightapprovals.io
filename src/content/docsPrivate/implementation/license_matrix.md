@@ -2,7 +2,7 @@
 title: "License Tiers & Feature Matrix"
 description: "A complete overview of features available in Core, Pro, and Enterprise tiers."
 section: "Implementation"
-order: 3
+order: 30
 ---
 
 Greenlight Approvals is offered in three license tiers: **Core**, **Pro**, and **Enterprise**.  

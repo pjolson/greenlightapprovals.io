@@ -2,7 +2,7 @@
 title: "Email Approval System Guide"
 description: "How Greenlight handles approve/reject actions through secure email links, including configuration, security, and troubleshooting."
 section: "Administration"
-order: 8
+order: 80
 ---
 
 The Email Approval System enables approvers to approve or reject transactions directly from their inbox using secure, one-click links.  

@@ -2,7 +2,7 @@
 title: "Budget Engine Architecture"
 description: "Technical deep dive into how Greenlight loads, calculates, and displays real-time budget insights."
 section: "Architecture"
-order: 6
+order: 60
 ---
 
 The Budget Engine powers Greenlight’s real-time budget insights, variance calculations, and budget analytics used in the Approval Drawer and Command Center.  

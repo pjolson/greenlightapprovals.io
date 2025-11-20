@@ -2,7 +2,7 @@
 title: "Approver Experience Guide"
 description: "How approvers review, approve, reject, and comment on transactions using the Greenlight Approval Drawer and email approvals."
 section: "Users"
-order: 1
+order: 10
 ---
 
 This guide explains how approvers use Greenlight to review and act on approvals through the Approval Drawer, email links, and the Command Center.  
