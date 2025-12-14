@@ -120,3 +120,56 @@ A complete list of all Greenlight documentation with proposed filenames for cons
 68. Support Playbooks — `support_playbooks.md`  
 69. Onboarding Checklist (Enterprise Customers) — `enterprise_onboarding.md`  
 70. Marketing Copy Kit — `marketing_copy_kit.md`
+
+---
+
+# 📸 Screenshot Manifest (Rough Draft)
+
+A high‑level list of recommended screenshots to capture for documentation, mapped to each major category.
+
+## 🟩 A. Implementation & Setup
+- Installation Guide: SuiteBundle search, installation confirmation  
+- Settings Guide: Main screen, SoD/AI/Budget toggles  
+- Report Settings: SLA thresholds, critical amounts, aging buckets  
+- Upgrade/Uninstall Guide: Bundle update/uninstall screens  
+
+## 🟦 B. Configuration & Administration
+- Rules: Rule list, rule config, classification filters  
+- Steps: Step list, step config, approver type selector  
+- SoD: Drawer SoD warning, enforcement example  
+- Budget Intelligence: Drawer budget block, Budget Dashboard  
+- Email Approvals: Sample email, approval landing page  
+- Delegations: Delegation record, Drawer delegate indicator  
+- Exceptions: Exception banner, Exception Dashboard  
+- Audit Package: Export page, ZIP/CSV structure  
+- Command Center: Landing page, module tiles  
+- Dashboards: SLA, Budget, Exceptions, Trends (Enterprise)
+
+## 🟨 C. End-User Documentation
+- Approver Experience: Drawer open, budget block, AI insights, SoD warning, approval success  
+- Submitter Experience: Submit view, pending Drawer state  
+- Approval Drawer: Drawer closed button, Drawer open, Details/Timeline/Comments tabs  
+- Approve via Email: Email, decision page, confirmation  
+- Worklist: List view, expanded item  
+- Manager/Reviewer: Manager Drawer, team dashboard (if applicable)
+
+## 🟧 D. Technical Architecture
+(No screenshots recommended — diagrams only if needed.)
+
+## 🟥 E. Troubleshooting
+(Optional screenshots for errors: invalid token, Drawer load error, stuck queue.)
+
+## 🟪 F. Compliance & Security
+(No screenshots recommended.)
+
+## 🟫 G. API & Integration
+(No screenshots recommended.)
+
+## 🟦 H. Partner Documentation
+(Optional: SDF deployment screen.)
+
+## 🟩 I. Company / Product Docs
+(No screenshots recommended.)
+
+## 🧭 J. Internal Documentation
+(No screenshots recommended.)
