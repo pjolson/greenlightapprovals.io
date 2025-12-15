@@ -1,0 +1,252 @@
+---
+import "../styles/global.css";
+
+const seo = {
+  title: "Terms of Service | Greenlight Software LLC",
+  description:
+    "Terms of Service for Greenlight Approvals covering subscription, usage, and legal terms.",
+};
+
+const lastUpdated = "December 15, 2024";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      .policy-shell {
+        width: min(900px, calc(100% - 2.5rem));
+        margin: 3rem auto 5rem;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: clamp(1.5rem, 4vw, 3rem);
+        box-shadow: 0 40px 120px rgba(0, 0, 0, 0.35);
+      }
+
+      .policy-shell h1,
+      .policy-shell h2 {
+        margin-bottom: 0.75rem;
+      }
+
+      .policy-shell p,
+      .policy-shell li {
+        color: #cdd5e0;
+        line-height: 1.7;
+      }
+
+      .policy-shell ul {
+        margin-left: 1.2rem;
+        margin-bottom: 1.25rem;
+        list-style: disc;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        margin: 1.5rem 0;
+      }
+
+      .caps {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="policy-shell">
+      <p class="eyebrow">Greenlight Software LLC</p>
+      <h1>Terms of Service</h1>
+      <p>Last updated: {lastUpdated}</p>
+
+      <hr class="divider" />
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        By accessing or using Greenlight Approvals ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>2. Description of Service</h2>
+      <p>
+        Greenlight Approvals is a NetSuite SuiteApp that provides multi-step approval workflows, budget enforcement, and compliance controls for NetSuite users. The software runs natively within NetSuite and provides approval routing, audit logging, and budget intelligence features.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>3. Eligibility</h2>
+      <p>
+        You must be authorized to bind your organization to these Terms. By using the Service, you represent that you have the authority to do so.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>4. Account and Registration</h2>
+      <ul>
+        <li>You are responsible for maintaining the confidentiality of your NetSuite account credentials.</li>
+        <li>You are responsible for all activities that occur under your account.</li>
+        <li>You must provide accurate and complete information during registration and keep it up to date.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>5. Subscription and Payment</h2>
+      <ul>
+        <li><strong>Pricing:</strong> Subscription fees are based on the tier selected (Core, Professional, or Enterprise) as published on our website.</li>
+        <li><strong>Billing:</strong> Fees are billed monthly in advance and are non-refundable except as required by law.</li>
+        <li><strong>Payment Terms:</strong> Payment is due upon receipt of invoice. Late payments may result in service suspension.</li>
+        <li><strong>Changes to Pricing:</strong> We may change our pricing with 30 days' notice. Founding Partner rates are locked in perpetually.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>6. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the Service for any unlawful purpose or in violation of any applicable laws</li>
+        <li>Attempt to interfere with, compromise, or reverse engineer the Service</li>
+        <li>Access the Service through unauthorized means or automated systems</li>
+        <li>Use the Service to transmit malware, viruses, or harmful code</li>
+        <li>Violate the security or integrity of NetSuite or any other systems</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>7. Data and Privacy</h2>
+      <ul>
+        <li>Your use of the Service is governed by our <a href="/privacy">Privacy Policy</a>.</li>
+        <li>The Service processes NetSuite data within your NetSuite environment according to NetSuite's data handling practices.</li>
+        <li>We do not own or claim rights to your business data processed through the Service.</li>
+        <li>You retain all rights to your data and may export it at any time.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>8. Intellectual Property</h2>
+      <ul>
+        <li>Greenlight Software LLC owns all rights, title, and interest in the Service, including all software, designs, and trademarks.</li>
+        <li>We grant you a limited, non-exclusive, non-transferable license to use the Service during your subscription term.</li>
+        <li>You may not copy, modify, distribute, or create derivative works of the Service.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>9. Service Availability and Support</h2>
+      <ul>
+        <li>We strive for 99.5% uptime but do not guarantee uninterrupted service.</li>
+        <li>Support levels vary by tier: Standard support (Core), Priority support (Professional), and Dedicated CSM (Enterprise).</li>
+        <li>We reserve the right to perform scheduled maintenance with reasonable notice.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>10. Warranties and Disclaimers</h2>
+      <p class="caps">
+        The service is provided "as is" without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+      </p>
+      <p>We do not warrant that:</p>
+      <ul>
+        <li>The Service will meet your specific requirements</li>
+        <li>The Service will be error-free or uninterrupted</li>
+        <li>Any errors will be corrected</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>11. Limitation of Liability</h2>
+      <p class="caps">
+        To the maximum extent permitted by law, Greenlight Software LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits, lost data, or business interruption, arising out of your use or inability to use the service.
+      </p>
+      <p class="caps">
+        Our total liability shall not exceed the amount you paid us in the 12 months preceding the claim.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>12. Indemnification</h2>
+      <p>
+        You agree to indemnify and hold Greenlight Software LLC harmless from any claims, losses, damages, or expenses (including legal fees) arising from:
+      </p>
+      <ul>
+        <li>Your use of the Service</li>
+        <li>Your violation of these Terms</li>
+        <li>Your violation of any third-party rights</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>13. Term and Termination</h2>
+      <ul>
+        <li><strong>Term:</strong> These Terms remain in effect while you use the Service.</li>
+        <li><strong>Termination by You:</strong> You may cancel your subscription at any time. Cancellation takes effect at the end of your current billing period.</li>
+        <li><strong>Termination by Us:</strong> We may suspend or terminate your access for violation of these Terms or non-payment.</li>
+        <li><strong>Effect of Termination:</strong> Upon termination, your right to use the Service ceases immediately. You remain responsible for any outstanding fees.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <h2>14. Modifications to Terms</h2>
+      <p>
+        We reserve the right to modify these Terms at any time. We will notify you of material changes via email or through the Service. Continued use after changes constitutes acceptance of the modified Terms.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>15. Modifications to Service</h2>
+      <p>
+        We reserve the right to modify, suspend, or discontinue any aspect of the Service at any time, with or without notice. We are not liable for any modifications or discontinuations.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>16. NetSuite Relationship</h2>
+      <p>
+        Greenlight Approvals is a third-party application for NetSuite. We are not affiliated with, endorsed by, or sponsored by Oracle or NetSuite. Your use of NetSuite is governed by Oracle's separate terms and conditions.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>17. Governing Law and Jurisdiction</h2>
+      <p>
+        These Terms are governed by the laws of the State of Wyoming, United States, without regard to conflict of law principles. Any disputes shall be resolved in the state or federal courts located in Wyoming.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>18. Entire Agreement</h2>
+      <p>
+        These Terms, together with our Privacy Policy, constitute the entire agreement between you and Greenlight Software LLC regarding the Service and supersede all prior agreements.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>19. Severability</h2>
+      <p>
+        If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>20. No Waiver</h2>
+      <p>
+        Our failure to enforce any right or provision of these Terms does not constitute a waiver of that right or provision.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>21. Contact Information</h2>
+      <p>For questions about these Terms, please contact us at:</p>
+      <p>
+        <strong>Greenlight Software LLC</strong><br />
+        Email: <a href="mailto:hello@greenlightapprovals.io">hello@greenlightapprovals.io</a><br />
+        Website: <a href="https://greenlightapprovals.io">https://greenlightapprovals.io</a>
+      </p>
+    </main>
+  </body>
+</html>
