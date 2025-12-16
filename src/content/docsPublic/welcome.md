@@ -5,7 +5,7 @@ section: "Getting started"
 order: 1
 ---
 
-Greenlight Approvals is a NetSuite-native SuiteApp for approvals, budget enforcement, and audit-ready logging.
+Greenlight Approvals is a NetSuite-native application for approvals, budget enforcement, and audit-ready logging.
 
 Use this section to orient new admins and finance leaders:
 
