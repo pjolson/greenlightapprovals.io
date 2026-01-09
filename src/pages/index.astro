@@ -159,6 +159,15 @@ const structuredData = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXNCVNF4MR"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GXNCVNF4MR');
+    </script>
     <title>{seo.title}</title>
     <meta name="description" content={seo.description} />
     <meta name="keywords" content={seo.keywords.join(", ")} />
