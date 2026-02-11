@@ -130,6 +130,7 @@ const futureFocus = [
 ];
 
 const canonical = Astro.site ? new URL("/", Astro.site).href : "https://greenlightapprovals.io/";
+const imageUrl = canonical.replace(/\/$/, "") + (seo.image.startsWith("/") ? seo.image : "/" + seo.image);
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -145,13 +146,16 @@ const structuredData = {
     category: "Subscription",
   },
   url: canonical,
-  image: seo.image,
+  image: imageUrl,
   publisher: {
     "@type": "Organization",
     name: "Greenlight Software LLC",
     url: canonical,
   },
 };
+
+// Prevent </script> in any string value from closing the script tag in HTML (fixes Google Search Console parsing error)
+const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/script");
 ---
 
 <!DOCTYPE html>
@@ -189,7 +193,7 @@ const structuredData = {
       rel="stylesheet"
     />
     <script type="application/ld+json" is:inline>
-      {JSON.stringify(structuredData)}
+      {safeJsonLd}
     </script>
   </head>
   <body>
