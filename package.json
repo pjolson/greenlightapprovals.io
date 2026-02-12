@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
+    "dev:fresh": "rm -rf node_modules/.vite .astro && astro dev",
+    "ports:free": "for p in 4173 4321 4322 4323 4324 4325 4326 4327 4328 4329 4330 4331 4332; do lsof -ti :$p 2>/dev/null | xargs kill -9 2>/dev/null; done; echo 'Cleared dev/preview ports'",
     "build": "astro build",
     "preview": "astro preview"
   },

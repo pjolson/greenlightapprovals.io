@@ -9,6 +9,14 @@ npm install
 npm run dev
 ```
 
+Then open **http://localhost:4173/** in your browser (or the URL the command prints).
+
+If the dev server never shows “ready” or the page doesn’t load:
+- **First run:** Wait 1–2 minutes; the first start can be slow while Vite optimizes dependencies.
+- **Clear caches and retry:** `npm run dev:fresh`
+- **Ports in use?** Run `npm run ports:free`, then try again. Or use whatever URL Astro prints once it finds a free port.
+- **Fallback (build + preview):** `npm run build && npm run preview` — then open the URL it prints.
+
 ## Deploy
 
 GitHub Pages is handled by `.github/workflows/deploy.yml`.

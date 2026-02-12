@@ -22,4 +22,8 @@ export default defineConfig({
   base,
   integrations: [react()],
   output: 'static',
+  server: {
+    port: 4173,
+    strictPort: false,
+  },
 });

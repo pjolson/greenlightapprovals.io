@@ -38,6 +38,24 @@ const featureCards = [
   },
 ];
 
+const featureVideos = [
+  {
+    title: "Approval Tray",
+    videoId: "kR00L4PH3Gk",
+    description: "See how Greenlight transforms NetSuite approvals. One slide-out tray: decision context, budget intelligence, approval timeline, one-click approve or reject. Native to NetSuite.",
+  },
+  {
+    title: "Approval rules in 60 seconds",
+    videoId: "1DAWQbAhZZA",
+    description: "Watch how fast you can build a fully configured approval rule in NetSuite—no scripting, no workflows. Set criteria, assign approvers, add context, enforce SoD. Configuration, not code.",
+  },
+  {
+    title: "Audit Prep in Minutes",
+    videoId: "38lEUDLqvBU",
+    description: "See how Greenlight turns audit prep from a weeks-long scramble into a few clicks. Pick your date range and reports, export, and hand ready packs to auditors. In minutes.",
+  },
+];
+
 const differentiators = [
   {
     title: "Approvals everyone understands",
@@ -290,6 +308,36 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         </div>
       </section>
 
+      <section id="see-it-in-action" class="section">
+        <div class="section-head">
+          <p class="eyebrow">See it in action</p>
+          <h2>Watch the product in motion.</h2>
+          <p>
+            Short walkthroughs of the approval tray, budget intelligence, and audit workflows—no login required.
+          </p>
+        </div>
+        <div class="video-grid">
+          {featureVideos.map((video) => (
+            <article class="video-card" data-video-id={video.videoId} data-video-title={video.title}>
+              <div class="video-card__header">
+                <h3>{video.title}</h3>
+                <p class="video-card__description">{video.description}</p>
+              </div>
+              <div class="video-wrapper" data-expand-video aria-label={`Expand ${video.title} to theater mode`}>
+                <span class="video-wrapper__expand-hint">Click to expand</span>
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  title={`${video.title} – YouTube`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                />
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section class="section alt" aria-label="differentiators">
         <div class="section-head">
           <p class="eyebrow">Why it matters</p>
@@ -317,6 +365,26 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
           </button>
           <img src="" alt="" loading="lazy" />
           <p class="feature-overlay__caption"></p>
+        </div>
+      </div>
+
+      <div id="video-theater" class="video-theater" aria-hidden="true">
+        <div class="video-theater__backdrop" data-close-video-theater></div>
+        <div class="video-theater__content" role="dialog" aria-modal="true" aria-label="Video theater">
+          <button type="button" class="video-theater__close" aria-label="Close video" data-close-video-theater>
+            ×
+          </button>
+          <h3 class="video-theater__title" id="video-theater-title"></h3>
+          <div class="video-theater__wrapper">
+            <iframe
+              id="video-theater-iframe"
+              src=""
+              title="YouTube video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            />
+          </div>
         </div>
       </div>
 
@@ -438,6 +506,43 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         document.addEventListener('keydown', (event) => {
           if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
             closeOverlay();
+          }
+        });
+      }
+
+      const videoTheater = document.getElementById('video-theater');
+      if (videoTheater) {
+        const iframe = document.getElementById('video-theater-iframe');
+        const titleEl = document.getElementById('video-theater-title');
+        const closeTargets = videoTheater.querySelectorAll('[data-close-video-theater]');
+
+        const closeVideoTheater = () => {
+          videoTheater.classList.remove('is-open');
+          videoTheater.setAttribute('aria-hidden', 'true');
+          if (iframe) iframe.src = '';
+          document.body.style.overflow = '';
+        };
+
+        document.querySelectorAll('.video-wrapper[data-expand-video]').forEach((wrapper) => {
+          wrapper.addEventListener('click', (e) => {
+            const card = wrapper.closest('.video-card');
+            if (!card) return;
+            const videoId = card.getAttribute('data-video-id');
+            const title = card.getAttribute('data-video-title');
+            if (!videoId || !iframe) return;
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            if (titleEl) titleEl.textContent = title || '';
+            videoTheater.classList.add('is-open');
+            videoTheater.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+
+        closeTargets.forEach((target) => target.addEventListener('click', closeVideoTheater));
+        videoTheater.querySelector('.video-theater__backdrop')?.addEventListener('click', closeVideoTheater);
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && videoTheater.classList.contains('is-open')) {
+            closeVideoTheater();
           }
         });
       }
