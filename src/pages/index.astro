@@ -192,9 +192,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
       rel="stylesheet"
     />
-    <script type="application/ld+json" is:inline>
-      {safeJsonLd}
-    </script>
+    <script type="application/ld+json" set:html={safeJsonLd}></script>
   </head>
   <body>
     <main>
