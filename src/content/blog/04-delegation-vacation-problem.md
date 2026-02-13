@@ -86,4 +86,4 @@ If any of these give you pause, it's worth addressing before your next audit —
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.com), a NetSuite-native approval workflow platform built for audit readiness.*
+*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.io/), a NetSuite-native approval workflow platform built for audit readiness.*

@@ -80,4 +80,4 @@ The good news is that all five of these are fixable. Some are process fixes. Som
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.com), a NetSuite-native approval workflow platform built for audit readiness. Have questions about your approval workflows? Connect with him on [LinkedIn](https://linkedin.com).*
+*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.io/), a NetSuite-native approval workflow platform built for audit readiness. Have questions about your approval workflows? Connect with him on [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).*

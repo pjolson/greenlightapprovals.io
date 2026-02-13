@@ -88,4 +88,4 @@ Your auditors care about one thing: can you demonstrate that the right person ap
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.com), a NetSuite-native approval workflow platform built for audit readiness.*
+*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.io/), a NetSuite-native approval workflow platform built for audit readiness.*
