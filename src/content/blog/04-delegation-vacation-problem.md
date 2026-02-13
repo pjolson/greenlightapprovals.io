@@ -1,7 +1,9 @@
-# Approval Delegation Done Wrong: The Vacation Problem
-
-*Someone goes on vacation. Approvals pile up. And then things start to break in ways that won't surface until your next audit.*
-
+---
+title: "Approval Delegation Done Wrong: The Vacation Problem"
+description: "Someone goes on vacation. Approvals pile up. And then things start to break in ways that won't surface until your next audit."
+pubDate: 2026-02-13
+tags: ["approvals", "delegation", "audit"]
+featured: false
 ---
 
 It's a Thursday afternoon. Your VP of Finance is heading to Cabo for 10 days. She's been approving purchase orders, vendor bills, and journal entries all morning, trying to clear the queue before she leaves. She gets through most of them but not all.

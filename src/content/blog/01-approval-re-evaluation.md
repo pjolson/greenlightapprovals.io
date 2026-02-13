@@ -1,7 +1,9 @@
-# What Happens When Your Approval Tool Doesn't Re-Evaluate Rules
-
-*A real story about 150 purchase orders, a routine edit, and an approval gap nobody saw coming.*
-
+---
+title: "What Happens When Your Approval Tool Doesn't Re-Evaluate Rules"
+description: "A real story about 150 purchase orders, a routine edit, and an approval gap nobody saw coming."
+pubDate: 2026-02-13
+tags: ["approvals", "NetSuite", "compliance"]
+featured: false
 ---
 
 I want to tell you about something I saw during a NetSuite engagement that changed how I think about approval workflows.
