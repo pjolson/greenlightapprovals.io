@@ -657,6 +657,23 @@ main {
   color: #d1fae5;
 }
 
+.contact-scheduler {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.contact-scheduler__link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-scheduler__link:hover {
+  text-decoration: underline;
+}
+
 .contact-note {
   text-align: center;
   color: var(--muted);

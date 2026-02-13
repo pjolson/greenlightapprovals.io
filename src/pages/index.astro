@@ -150,6 +150,8 @@ const futureFocus = [
 const canonical = Astro.site ? new URL("/", Astro.site).href : "https://greenlightapprovals.io/";
 const imageUrl = canonical.replace(/\/$/, "") + (seo.image.startsWith("/") ? seo.image : "/" + seo.image);
 
+const meetingUrl = "https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9";
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -424,6 +426,9 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
           <span>Unlimited approvers across subsidiaries</span>
           <span>Budget enforcement + audit packs included</span>
         </div>
+        <p class="contact-scheduler">
+          Prefer to pick a time? <a href={meetingUrl} target="_blank" rel="noopener noreferrer" class="contact-scheduler__link">Schedule a call</a>
+        </p>
         <div class="form-shell contact-form">
           <script src="https://js-eu1.hsforms.net/forms/embed/147146964.js" defer></script>
           <div
