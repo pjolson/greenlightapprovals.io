@@ -7,6 +7,14 @@ const baseDocSchema = z.object({
   order: z.number().int().nonnegative().default(0),
 });
 
+const blogSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  pubDate: z.coerce.date(),
+  tags: z.array(z.string()).default([]),
+  featured: z.boolean().default(false),
+});
+
 export const collections = {
   docsPublic: defineCollection({
     type: 'content',
@@ -15,5 +23,9 @@ export const collections = {
   docsPrivate: defineCollection({
     type: 'content',
     schema: baseDocSchema,
+  }),
+  blog: defineCollection({
+    type: 'content',
+    schema: blogSchema,
   }),
 };

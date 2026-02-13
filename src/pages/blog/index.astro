@@ -1,0 +1,237 @@
+---
+import "../../styles/global.css";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+const sorted = [...allPosts].sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const featured = sorted.filter((p) => p.data.featured).slice(0, 4);
+const library = sorted;
+
+const canonical = Astro.site ? new URL("/blog", Astro.site).href : "https://greenlightapprovals.io/blog";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Blog | Greenlight Approvals</title>
+    <meta name="description" content="Product updates, compliance tips, and how-tos from the Greenlight Approvals team." />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="blog-main">
+      <a href="/" class="blog-back">← Back to home</a>
+
+      <header class="blog-header">
+        <p class="eyebrow">Blog</p>
+        <h1>Updates and how-tos</h1>
+        <p class="blog-header__intro">Product news, compliance tips, and guides from the Greenlight Approvals team.</p>
+      </header>
+
+      {featured.length > 0 && (
+        <section class="blog-section">
+          <h2 class="blog-section__title">Featured</h2>
+          <div class="blog-card-grid">
+            {featured.map((entry) => (
+              <a href={`/blog/${entry.slug}/`} class="blog-card">
+                <h3 class="blog-card__title">{entry.data.title}</h3>
+                <p class="blog-card__description">{entry.data.description}</p>
+                <time class="blog-card__date" datetime={entry.data.pubDate.toISOString()}>
+                  {entry.data.pubDate.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                </time>
+                {entry.data.tags.length > 0 && (
+                  <ul class="blog-card__tags" aria-label="Tags">
+                    {entry.data.tags.slice(0, 3).map((tag) => (
+                      <li><span class="blog-tag">{tag}</span></li>
+                    ))}
+                  </ul>
+                )}
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section class="blog-section">
+        <h2 class="blog-section__title">All posts</h2>
+        <ul class="blog-list">
+          {library.map((entry) => (
+            <li>
+              <a href={`/blog/${entry.slug}/`} class="blog-list__link">
+                <span class="blog-list__title">{entry.data.title}</span>
+                <time class="blog-list__date" datetime={entry.data.pubDate.toISOString()}>
+                  {entry.data.pubDate.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+                </time>
+              </a>
+              {entry.data.tags.length > 0 && (
+                <ul class="blog-list__tags" aria-hidden="true">
+                  {entry.data.tags.map((tag) => (
+                    <li><span class="blog-tag blog-tag--small">{tag}</span></li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  .blog-main {
+    width: min(800px, calc(100% - 2.5rem));
+    margin: 0 auto 4rem;
+    padding-top: 2rem;
+  }
+
+  .blog-back {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .blog-back:hover {
+    color: var(--accent);
+  }
+
+  .blog-header {
+    margin-bottom: 3rem;
+  }
+
+  .blog-header .eyebrow {
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-header h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-header__intro {
+    color: var(--muted);
+    max-width: 540px;
+  }
+
+  .blog-section {
+    margin-bottom: 3rem;
+  }
+
+  .blog-section__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .blog-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .blog-card {
+    display: block;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    transition: border-color 150ms ease, transform 150ms ease;
+  }
+
+  .blog-card:hover {
+    border-color: rgba(16, 185, 129, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .blog-card__title {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-card__description {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .blog-card__date {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .blog-card__tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .blog-list {
+    list-style: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .blog-list > li {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .blog-list__link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    padding: 1rem 0;
+  }
+
+  .blog-list__link:hover .blog-list__title {
+    color: var(--accent);
+  }
+
+  .blog-list__title {
+    font-weight: 500;
+  }
+
+  .blog-list__date {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .blog-list__tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0;
+  }
+
+  .blog-tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent);
+  }
+
+  .blog-tag--small {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+  }
+</style>
