@@ -551,6 +551,15 @@ main {
   margin-right: 0.5rem;
 }
 
+.pricing-card--enterprise {
+  border-color: var(--accent);
+}
+
+.pricing-card .cta {
+  margin-top: auto;
+  text-align: center;
+}
+
 .founding-card {
   margin-top: 2rem;
   padding: 1.75rem;

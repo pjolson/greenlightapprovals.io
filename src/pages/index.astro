@@ -120,7 +120,7 @@ const pricing = [
   },
   {
     tier: "Enterprise",
-    price: "$2,999/mo",
+    price: "Let's Talk",
     description: "Governance & Unlimited — global control tower with executive dashboards and dedicated CSM.",
     bullets: [
       "Unlimited subsidiaries/entities and cross-entity/intercompany orchestration",
@@ -401,7 +401,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         </div>
         <div class="pricing-grid">
           {pricing.map((tier) => (
-            <article class="pricing-card">
+            <article class={`pricing-card${tier.tier === "Enterprise" ? " pricing-card--enterprise" : ""}`}>
               <div>
                 <p class="eyebrow">{tier.tier}</p>
                 <h3>{tier.price}</h3>
@@ -412,6 +412,9 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
                   <li>{bullet}</li>
                 ))}
               </ul>
+              {tier.tier === "Enterprise" && (
+                <a class="cta" href="#contact">Book a Demo</a>
+              )}
             </article>
           ))}
         </div>
