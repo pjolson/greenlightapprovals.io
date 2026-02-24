@@ -8,7 +8,7 @@ const sorted = [...allPosts].sort((a, b) => b.data.pubDate.getTime() - a.data.pu
 const featured = sorted.filter((p) => p.data.featured).slice(0, 4);
 const library = sorted;
 
-const canonical = Astro.site ? new URL("/blog", Astro.site).href : "https://greenlightapprovals.io/blog";
+const canonical = Astro.site ? new URL("/resources", Astro.site).href : "https://greenlightapprovals.io/resources";
 ---
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ const canonical = Astro.site ? new URL("/blog", Astro.site).href : "https://gree
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Blog | Greenlight Approvals</title>
+    <title>Resources | Greenlight Approvals</title>
     <meta name="description" content="Product updates, compliance tips, and how-tos from the Greenlight Approvals team." />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.ico" />
@@ -53,7 +53,7 @@ const canonical = Astro.site ? new URL("/blog", Astro.site).href : "https://gree
         <div class="nav-links">
           <a href="/#features">Product</a>
           <a href="/#pricing">Pricing</a>
-          <a href="/blog">Blog</a>
+          <a href="/resources">Resources</a>
           <a href="/#contact">Contact</a>
         </div>
         <a class="cta ghost" href="/#contact">Book a Demo</a>
@@ -63,7 +63,7 @@ const canonical = Astro.site ? new URL("/blog", Astro.site).href : "https://gree
       <a href="/" class="blog-back">← Back to home</a>
 
       <header class="blog-header">
-        <p class="eyebrow">Blog</p>
+        <p class="eyebrow">Resources</p>
         <h1>Updates and how-tos</h1>
         <p class="blog-header__intro">Product news, compliance tips, and guides from the Greenlight Approvals team.</p>
       </header>
@@ -73,7 +73,7 @@ const canonical = Astro.site ? new URL("/blog", Astro.site).href : "https://gree
           <h2 class="blog-section__title">Featured</h2>
           <div class="blog-card-grid">
             {featured.map((entry) => (
-              <a href={`/blog/${entry.slug}/`} class="blog-card">
+              <a href={`/resources/${entry.slug}/`} class="blog-card">
                 <h3 class="blog-card__title">{entry.data.title}</h3>
                 <p class="blog-card__description">{entry.data.description}</p>
                 <time class="blog-card__date" datetime={entry.data.pubDate.toISOString()}>
@@ -97,7 +97,7 @@ const canonical = Astro.site ? new URL("/blog", Astro.site).href : "https://gree
         <ul class="blog-list">
           {library.map((entry) => (
             <li>
-              <a href={`/blog/${entry.slug}/`} class="blog-list__link">
+              <a href={`/resources/${entry.slug}/`} class="blog-list__link">
                 <span class="blog-list__title">{entry.data.title}</span>
                 <time class="blog-list__date" datetime={entry.data.pubDate.toISOString()}>
                   {entry.data.pubDate.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}

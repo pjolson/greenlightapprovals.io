@@ -12,14 +12,14 @@ export async function getStaticPaths() {
 const slug = Astro.params.slug;
 const entry = await getEntry("blog", slug);
 if (!entry) {
-  return Astro.redirect("/blog/");
+  return Astro.redirect("/resources/");
 }
 const { Content } = await entry.render();
 const { data } = entry;
 
 const canonical = Astro.site
-  ? new URL(`/blog/${entry.slug}/`, Astro.site).href
-  : `https://greenlightapprovals.io/blog/${entry.slug}/`;
+  ? new URL(`/resources/${entry.slug}/`, Astro.site).href
+  : `https://greenlightapprovals.io/resources/${entry.slug}/`;
 ---
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ const canonical = Astro.site
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>{data.title} | Blog | Greenlight Approvals</title>
+    <title>{data.title} | Resources | Greenlight Approvals</title>
     <meta name="description" content={data.description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.ico" />
@@ -64,14 +64,14 @@ const canonical = Astro.site
         <div class="nav-links">
           <a href="/#features">Product</a>
           <a href="/#pricing">Pricing</a>
-          <a href="/blog">Blog</a>
+          <a href="/resources">Resources</a>
           <a href="/#contact">Contact</a>
         </div>
         <a class="cta ghost" href="/#contact">Book a Demo</a>
       </nav>
     </header>
     <main class="blog-post-main">
-      <a href="/blog/" class="blog-back">← Back to blog</a>
+      <a href="/resources/" class="blog-back">← Back to resources</a>
 
       <article class="blog-post">
         <header class="blog-post__header">
