@@ -3,7 +3,7 @@ title: "The Real Cost of Approval Workflow Audit Prep"
 description: "Finance teams spend weeks every audit cycle assembling approval evidence by hand. Here's where that time actually goes — and why it doesn't have to be this way."
 pubDate: 2026-02-09
 tags: ["audit", "compliance", "NetSuite"]
-featured: true
+featured: false
 ---
 
 A Controller I worked with once said: “For three weeks, my team does two jobs. Their actual job, and the auditor’s job.”
