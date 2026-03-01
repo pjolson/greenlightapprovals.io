@@ -9,6 +9,9 @@ const featured = sorted.filter((p) => p.data.featured).slice(0, 4);
 const library = sorted;
 
 const canonical = Astro.site ? new URL("/resources", Astro.site).href : "https://greenlightapprovals.io/resources";
+const imageUrl = Astro.site ? new URL("/images/greenlogo.png", Astro.site).href : "https://greenlightapprovals.io/images/greenlogo.png";
+const pageTitle = "Resources | Greenlight Approvals";
+const pageDescription = "Product updates, compliance tips, and how-tos from the Greenlight Approvals team.";
 ---
 
 <!DOCTYPE html>
@@ -16,16 +19,37 @@ const canonical = Astro.site ? new URL("/resources", Astro.site).href : "https:/
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Resources | Greenlight Approvals</title>
-    <meta name="description" content="Product updates, compliance tips, and how-tos from the Greenlight Approvals team." />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
     <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
   </head>
   <body>
     <header class="site-header" id="top">

@@ -23,7 +23,7 @@ const { title, description, badge, searchItems = [], searchBase = "/docs" } = As
   </aside>
   <article class="docs-body">
     <div class="docs-search" data-search-base={searchBase} aria-label="Search documentation">
-      <input type="search" placeholder="Search docs…" />
+      <input type="search" placeholder="Search docs…" aria-label="Search documentation" />
       <script type="application/json" id="docs-search-data" set:html={JSON.stringify(searchItems)}></script>
       <div class="docs-search__results" hidden>
         <ul></ul>

@@ -209,9 +209,22 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <script type="application/ld+json" set:html={safeJsonLd}></script>
   </head>
   <body>
@@ -360,7 +373,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         </div>
       </section>
 
-      <div id="feature-overlay" class="feature-overlay" aria-hidden="true">
+      <div id="feature-overlay" class="feature-overlay" inert>
         <div class="feature-overlay__backdrop" data-close-overlay></div>
         <div class="feature-overlay__content" role="dialog" aria-modal="true" aria-label="Feature preview">
           <button type="button" class="feature-overlay__close" aria-label="Close preview" data-close-overlay>
@@ -371,7 +384,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         </div>
       </div>
 
-      <div id="video-theater" class="video-theater" aria-hidden="true">
+      <div id="video-theater" class="video-theater" inert>
         <div class="video-theater__backdrop" data-close-video-theater></div>
         <div class="video-theater__content" role="dialog" aria-modal="true" aria-label="Video theater">
           <button type="button" class="video-theater__close" aria-label="Close video" data-close-video-theater>
@@ -484,7 +497,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
 
         const closeOverlay = () => {
           overlay.classList.remove('is-open');
-          overlay.setAttribute('aria-hidden', 'true');
+          overlay.inert = true;
           if (img) {
             img.src = '';
             img.alt = '';
@@ -507,7 +520,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
               caption.textContent = `${title} — ${body}`;
             }
             overlay.classList.add('is-open');
-            overlay.setAttribute('aria-hidden', 'false');
+            overlay.inert = false;
           });
         });
 
@@ -527,7 +540,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
 
         const closeVideoTheater = () => {
           videoTheater.classList.remove('is-open');
-          videoTheater.setAttribute('aria-hidden', 'true');
+          videoTheater.inert = true;
           if (iframe) iframe.src = '';
           document.body.style.overflow = '';
         };
@@ -542,7 +555,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
             iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
             if (titleEl) titleEl.textContent = title || '';
             videoTheater.classList.add('is-open');
-            videoTheater.setAttribute('aria-hidden', 'false');
+            videoTheater.inert = false;
             document.body.style.overflow = 'hidden';
           });
         });
