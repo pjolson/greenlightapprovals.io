@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
+import sitemap from '@astrojs/sitemap';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -20,7 +21,7 @@ const site = process.env.ASTRO_SITE ?? (cnameDomain ? `https://${cnameDomain}` :
 export default defineConfig({
   site,
   base,
-  integrations: [react()],
+  integrations: [react(), sitemap()],
   output: 'static',
   server: {
     port: 4173,
