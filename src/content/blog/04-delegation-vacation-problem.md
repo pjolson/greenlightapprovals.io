@@ -18,8 +18,8 @@ The admin changes status from Pending to Approved. Logjam cleared. Except it isn
 
 **The frequency problem.** It’s not just vacation. Conferences, sick days, travel. In a mid-size org with a few people in the chain, someone’s out most weeks. If there’s no formal delegation, your team is improvising dozens of times a year. Each one is a small risk. They add up.
 
-Quick test: If your VP went on vacation tomorrow, what would happen to their queue? If the answer is “we’d figure it out” or involves an admin or shared login, you have a gap. Worth closing before the next audit.
+Quick test: If your VP went on vacation tomorrow, what would happen to their queue? If the answer is “we’d figure it out” or involves an admin or shared login, you have a gap. Worth closing before the next audit. (This is red flag #5 in our list of [5 approval workflow red flags your auditor will find before you do](/resources/5-red-flags-approval-workflow/).)
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.io/), a NetSuite-native approval workflow platform built for audit readiness.*
+*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness.*

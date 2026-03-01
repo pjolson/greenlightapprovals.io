@@ -60,7 +60,7 @@ The immediate cost is small. One transaction, one workaround, problem solved.
 
 The cumulative cost is significant. Every undocumented override is a potential audit finding. A pattern of undocumented overrides suggests a control environment that isn't functioning as designed. And once an auditor identifies that pattern, the remediation isn't fixing one transaction — it's proving that your entire approval process can be trusted.
 
-Finance teams that have been through this know the drill. Weeks of pulling transaction histories, cross-referencing email threads, interviewing approvers about decisions they made months ago, and assembling evidence packages that should have been created automatically.
+Finance teams that have been through this know the drill. Weeks of [pulling transaction histories, cross-referencing email threads](/resources/03-real-cost-audit-prep/), interviewing approvers about decisions they made months ago, and assembling evidence packages that should have been created automatically.
 
 All because the system didn't have a clean way to say "yes, someone broke the chain — and here's exactly why."
 
@@ -68,8 +68,8 @@ All because the system didn't have a clean way to say "yes, someone broke the ch
 
 The best approval workflows aren't the ones with the most rules. They're the ones that handle the moment when the rules aren't enough.
 
-If your current setup treats every override as an admin workaround, you're not saving time. You're borrowing it — and the interest comes due at audit.
+If your current setup treats every override as an admin workaround, you're not saving time. You're borrowing it — and the interest comes due at audit. (Not sure where you stand? Start with these [5 approval workflow red flags](/resources/5-red-flags-approval-workflow/).)
 
 ---
 
-*Greenlight Approvals builds override controls directly into the approval engine. Restricted authority, transaction-level exceptions, required documentation, and a complete audit trail — so your team can move fast without creating gaps your auditors will find later. See it at [greenlightapprovals.io](https://greenlightapprovals.io).*
+*Greenlight Approvals builds override controls directly into the approval engine. Restricted authority, transaction-level exceptions, required documentation, and a complete audit trail — so your team can move fast without creating gaps your auditors will find later. [Get in touch](/#contact).*

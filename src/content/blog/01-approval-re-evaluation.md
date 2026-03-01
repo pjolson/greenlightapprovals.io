@@ -20,10 +20,10 @@ Multiply that by every PO that gets edited between submit and post (and in purch
 
 **Why it’s not obvious.** Most approval tools evaluate rules once at submission. It’s simpler to build. But NetSuite isn’t a place where transactions stay frozen — POs get revised, bills get adjusted, expense reports get more receipts. If your tool doesn’t re-evaluate when data changes, you’re betting that submit-time and post-time match. In a lot of environments, that bet loses.
 
-**What to do.** Does your routing re-evaluate when amounts or line items change — not just when someone clicks “resubmit”? If you’re not sure, find out before the auditors do. You can also run a spot check: compare posted amounts to your thresholds and see if anything slipped through with the wrong approver.
+**What to do.** Does your routing re-evaluate when amounts or line items change — not just when someone clicks “resubmit”? If you’re not sure, find out before the auditors do. You can also run a spot check: compare posted amounts to your thresholds and see if anything slipped through with the wrong approver. (This is red flag #1 in our breakdown of [5 approval workflow red flags your auditor will find before you do](/resources/5-red-flags-approval-workflow/).)
 
 The Acme story stuck with me because it’s a perfect example of the gap between “approvals are happening” and “approvals are happening correctly.” That gap is wider than most people think.
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.io/), a NetSuite-native approval workflow platform built for audit readiness.*
+*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness.*

@@ -18,8 +18,8 @@ The slow one is annoying. The misrouted one shows up in your audit as a control 
 
 **A better frame.** Evaluate approval workflows on defensibility, not speed. A defensible process is one where you can hand an auditor any transaction and show who approved it, when, why they were the right person, and what the transaction looked like at that moment. Speed follows from good design; it shouldn’t be the main goal.
 
-When finance leaders say “our approvals take too long,” the real pain is often elsewhere: “We spend weeks pulling evidence for auditors.” “I’m not sure our routing matches our policy.” “When someone’s on vacation, everything breaks.” Those are control problems. They’re a lot more expensive to get wrong than a slow approval.
+When finance leaders say “our approvals take too long,” the real pain is often elsewhere: “We spend weeks [pulling evidence for auditors](/resources/03-real-cost-audit-prep/).” “I’m not sure our routing matches our policy.” “When someone’s on vacation, everything breaks.” Those are control problems. They’re a lot more expensive to get wrong than a slow approval — and when someone [breaks the approval chain](/resources/06-breaking-the-approval-chain-blog/) to keep things moving, speed-first thinking is usually why.
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.io/), a NetSuite-native approval workflow platform built for audit readiness.*
+*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness.*

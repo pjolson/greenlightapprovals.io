@@ -21,6 +21,30 @@ const canonical = Astro.site
   ? new URL(`/resources/${entry.slug}/`, Astro.site).href
   : `https://greenlightapprovals.io/resources/${entry.slug}/`;
 const imageUrl = Astro.site ? new URL("/images/greenlogo.png", Astro.site).href : "https://greenlightapprovals.io/images/greenlogo.png";
+
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: data.title,
+  description: data.description,
+  datePublished: data.pubDate.toISOString(),
+  image: imageUrl,
+  url: canonical,
+  author: {
+    "@type": "Organization",
+    name: "Greenlight Software LLC",
+    url: "https://greenlightapprovals.io",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Greenlight Software LLC",
+    url: "https://greenlightapprovals.io",
+    logo: {
+      "@type": "ImageObject",
+      url: imageUrl,
+    },
+  },
+}).replace(/<\/script/gi, "<\\/script");
 ---
 
 <!DOCTYPE html>
@@ -40,6 +64,7 @@ const imageUrl = Astro.site ? new URL("/images/greenlogo.png", Astro.site).href 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={data.title} />
     <meta name="twitter:description" content={data.description} />
+    <script type="application/ld+json" set:html={articleSchema}></script>
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

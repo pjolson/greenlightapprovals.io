@@ -14,10 +14,10 @@ She wasn’t exaggerating. Every audit cycle they spent 40–60 hours pulling ap
 
 **The math.** 40 hours per audit cycle at a blended $75/hr is $3,000 in labor. For SOX shops with quarterly testing, multiply by four — $12K+ a year just on approval evidence. And that’s before you count delayed closes and the fact that nobody wants to do this work.
 
-**Why it’s this hard.** Most approval systems weren’t built with audit evidence in mind. They log to system notes — a general-purpose log mixed with every other change. Getting clean, structured evidence out often needs custom saved searches or manual compilation. The contrast: in a system designed for it, you open the approval audit report, filter by date and type, export. Five minutes instead of five days.
+**Why it’s this hard.** Most approval systems weren’t built with audit evidence in mind. They log to system notes — a general-purpose log mixed with every other change. Getting clean, structured evidence out often needs custom saved searches or manual compilation. The problem compounds when [transactions change after approval](/resources/01-approval-re-evaluation/) or your team is working around [five common red flags](/resources/5-red-flags-approval-workflow/) without realizing it. The contrast: in a system designed for it, you open the approval audit report, filter by date and type, export. Five minutes instead of five days.
 
 **What to ask.** Can you export a complete approval trail for any date range in under 10 minutes? Does it include *why* each person was in the chain (not just who)? If the answer involves “we run some saved searches and then…” you’re in manual territory. The answers tell you whether audit readiness was a design goal or an afterthought — and that’s what decides how your team spends those three weeks every year.
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](https://greenlightapprovals.io/), a NetSuite-native approval workflow platform built for audit readiness.*
+*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness.*
