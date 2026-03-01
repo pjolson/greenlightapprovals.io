@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://greenlightapprovals.io/sitemap-index.xml
