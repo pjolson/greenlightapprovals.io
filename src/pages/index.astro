@@ -183,14 +183,11 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXNCVNF4MR"></script>
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer=window.dataLayer||[];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GXNCVNF4MR');
+      gtag('js',new Date());gtag('config','G-GXNCVNF4MR');
+      (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-GXNCVNF4MR';s.async=true;document.head.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,3000);}})();
     </script>
     <title>{seo.title}</title>
     <meta name="description" content={seo.description} />
@@ -209,22 +206,9 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
       rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
     />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
     <script type="application/ld+json" set:html={safeJsonLd}></script>
   </head>
   <body>
@@ -341,13 +325,14 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
               </div>
               <div class="video-wrapper" data-expand-video aria-label={`Expand ${video.title} to theater mode`}>
                 <span class="video-wrapper__expand-hint">Click to expand</span>
-                <iframe
-                  src={`https://www.youtube.com/embed/${video.videoId}`}
-                  title={`${video.title} – YouTube`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                <img
+                  src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
+                  alt={`${video.title} – video thumbnail`}
+                  loading="lazy"
+                  width="480"
+                  height="360"
                 />
+                <span class="video-wrapper__play" aria-hidden="true">▶</span>
               </div>
             </article>
           ))}
