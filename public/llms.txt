@@ -1,0 +1,32 @@
+# Greenlight Approvals
+
+> Greenlight Approvals is a NetSuite-native approval workflow platform built for audit readiness. It provides multi-step approval routing, budget enforcement, delegation controls, and compliance-grade audit trails — all running natively inside NetSuite.
+
+Greenlight Approvals solves a specific problem: most NetSuite approval tools prioritize speed over correctness. They evaluate routing rules once at submission, don't re-evaluate when transactions change, and log approvals to system notes that are difficult to extract for auditors. Greenlight re-evaluates approval chains when amounts or line items change, captures structured audit evidence automatically, and provides controlled override and delegation workflows that satisfy SOX and internal audit requirements.
+
+Built by Greenlight Software LLC, a company founded by Patrick Olson after 8+ years of NetSuite consulting. Based in Wyoming, USA.
+
+## Product Pages
+
+- [Homepage](https://greenlightapprovals.io/): Product overview, features, pricing tiers (Core, Professional, Enterprise), and demo booking
+- [Documentation](https://greenlightapprovals.io/docs): Public product documentation covering platform overview, budgeting, and feature guides
+- [Pricing](https://greenlightapprovals.io/#pricing): Three tiers — Core ($2,500/mo), Professional ($4,000/mo), and Enterprise (custom)
+
+## Resources
+
+- [What Happens When Your Approval Tool Doesn't Re-Evaluate Rules](https://greenlightapprovals.io/resources/01-approval-re-evaluation/): A case study of 150+ purchase orders misrouted because the approval tool only evaluated rules at submission, not when transaction amounts changed
+- [Why "Faster Approvals" Is the Wrong Goal](https://greenlightapprovals.io/resources/02-faster-approvals-wrong-goal/): Why approval workflows should be evaluated on defensibility and audit readiness rather than speed
+- [The Real Cost of Approval Workflow Audit Prep](https://greenlightapprovals.io/resources/03-real-cost-audit-prep/): How finance teams spend 40-60 hours per audit cycle manually assembling approval evidence from NetSuite system notes
+- [Approval Delegation Done Wrong: The Vacation Problem](https://greenlightapprovals.io/resources/04-delegation-vacation-problem/): How informal delegation workarounds (admin overrides, shared logins) create audit risk and what proper delegation looks like
+- [5 Approval Workflow Red Flags Your Auditor Will Find Before You Do](https://greenlightapprovals.io/resources/5-red-flags-approval-workflow/): The five most common structural gaps in NetSuite approval workflows, including post-approval changes, approver concentration, and vacation workarounds
+- [When Someone Needs to Break the Approval Chain](https://greenlightapprovals.io/resources/06-breaking-the-approval-chain-blog/): Why overrides are inevitable and how to design approval systems that document exceptions with full audit trails
+
+## Legal
+
+- [Privacy Policy](https://greenlightapprovals.io/privacy): Privacy policy for Greenlight Approvals
+- [Terms of Service](https://greenlightapprovals.io/terms): Terms of service covering subscription, usage, and legal terms
+
+## Contact
+
+- Website: https://greenlightapprovals.io/#contact
+- Email: hello@greenlightapprovals.io
