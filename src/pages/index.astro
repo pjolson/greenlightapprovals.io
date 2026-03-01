@@ -447,7 +447,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
           Prefer to pick a time? <a href={meetingUrl} target="_blank" rel="noopener noreferrer" class="contact-scheduler__link">Schedule a call</a>
         </p>
         <div class="form-shell contact-form">
-          <script src="https://js-eu1.hsforms.net/forms/embed/147146964.js" defer></script>
+          <!-- HubSpot form loaded lazily via IntersectionObserver -->
           <div
             class="hs-form-frame"
             data-region="eu1"
@@ -569,8 +569,33 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         });
       }
     </script>
-    <!-- HubSpot Tracking Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer
-      src="//js-eu1.hs-scripts.com/147146964.js"></script>
+    <script is:inline>
+      (function(){
+        var hsLoaded=false,formLoaded=false;
+        function loadHS(){
+          if(hsLoaded)return;hsLoaded=true;
+          var s=document.createElement('script');
+          s.src='//js-eu1.hs-scripts.com/147146964.js';
+          s.async=true;document.body.appendChild(s);
+        }
+        function loadForm(){
+          if(formLoaded)return;formLoaded=true;
+          var s=document.createElement('script');
+          s.src='https://js-eu1.hsforms.net/forms/embed/147146964.js';
+          document.body.appendChild(s);
+        }
+        ['scroll','mousemove','touchstart','keydown'].forEach(function(e){
+          window.addEventListener(e,loadHS,{once:true,passive:true});
+        });
+        if('requestIdleCallback' in window){requestIdleCallback(loadHS,{timeout:5000});}
+        else{setTimeout(loadHS,5000);}
+        var contact=document.getElementById('contact');
+        if(contact&&'IntersectionObserver' in window){
+          new IntersectionObserver(function(entries,obs){
+            if(entries[0].isIntersecting){loadForm();obs.disconnect();}
+          },{rootMargin:'200px'}).observe(contact);
+        }else if(contact){loadForm();}
+      })();
+    </script>
   </body>
 </html>
