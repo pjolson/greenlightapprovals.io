@@ -187,7 +187,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
       window.dataLayer=window.dataLayer||[];
       function gtag(){dataLayer.push(arguments);}
       gtag('js',new Date());gtag('config','G-GXNCVNF4MR');
-      (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-GXNCVNF4MR';s.async=true;document.head.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,3000);}})();
+      (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-GXNCVNF4MR';s.async=true;document.head.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});})();
     </script>
     <title>{seo.title}</title>
     <meta name="description" content={seo.description} />
@@ -580,8 +580,6 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         ['scroll','mousemove','touchstart','keydown'].forEach(function(e){
           window.addEventListener(e,loadHS,{once:true,passive:true});
         });
-        if('requestIdleCallback' in window){requestIdleCallback(loadHS,{timeout:5000});}
-        else{setTimeout(loadHS,5000);}
         var contact=document.getElementById('contact');
         if(contact&&'IntersectionObserver' in window){
           new IntersectionObserver(function(entries,obs){
