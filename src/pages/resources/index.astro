@@ -8,7 +8,7 @@ const sorted = [...allPosts].sort((a, b) => b.data.pubDate.getTime() - a.data.pu
 const featured = sorted.filter((p) => p.data.featured).slice(0, 4);
 const library = sorted;
 
-const canonical = Astro.site ? new URL("/resources", Astro.site).href : "https://greenlightapprovals.io/resources";
+const canonical = Astro.site ? new URL("/resources/", Astro.site).href : "https://greenlightapprovals.io/resources/";
 const imageUrl = Astro.site ? new URL("/images/greenlogo.png", Astro.site).href : "https://greenlightapprovals.io/images/greenlogo.png";
 const pageTitle = "Resources | Greenlight Approvals";
 const pageDescription = "Product updates, compliance tips, and how-tos from the Greenlight Approvals team.";

@@ -5,7 +5,16 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: process.env.ASTRO_SITE ?? 'https://greenlightapprovals.io',
   base: process.env.ASTRO_BASE ?? '/',
-  integrations: [react(), sitemap()],
+  trailingSlash: 'always',
+  integrations: [
+    react(),
+    sitemap({
+      serialize(item) {
+        item.lastmod = new Date().toISOString();
+        return item;
+      },
+    }),
+  ],
   output: 'static',
   server: {
     port: 4173,
