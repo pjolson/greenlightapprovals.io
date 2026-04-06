@@ -154,24 +154,24 @@ const meetingUrl = "https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Greenlight Approvals",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  description: seo.description,
-  offers: {
-    "@type": "Offer",
-    priceCurrency: "USD",
-    price: "499",
-    category: "Subscription",
-  },
-  url: canonical,
-  image: imageUrl,
-  publisher: {
-    "@type": "Organization",
-    name: "Greenlight Software LLC",
-    url: canonical,
-  },
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "Greenlight Software LLC",
+      url: canonical,
+      logo: imageUrl,
+      description: seo.description,
+    },
+    {
+      "@type": "WebSite",
+      name: "Greenlight Approvals",
+      url: canonical,
+      publisher: {
+        "@type": "Organization",
+        name: "Greenlight Software LLC",
+      },
+    },
+  ],
 };
 
 // Prevent </script> in any string value from closing the script tag in HTML (fixes Google Search Console parsing error)
