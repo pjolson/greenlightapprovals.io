@@ -1,5 +1,5 @@
 ---
-title: "5 Approval Workflow Red Flags Your Auditor Will Find Before You Do"
+title: "5 Approval Workflow Red Flags Auditors Find First"
 description: "Most finance teams don't discover approval gaps on their own. Here's what to look for before your next audit does it for you."
 pubDate: 2026-02-12
 tags: ["compliance", "audit", "approvals", "NetSuite"]
