@@ -32,6 +32,7 @@ const sections = docs.reduce<Record<string, typeof docs>>((acc, entry) => {
 
 const pageTitle = `${doc.data.title} | Docs | Greenlight Approvals`;
 const canonical = Astro.site ? new URL(`/docs/${slug}/`, Astro.site).href : `/docs/${slug}/`;
+const imageUrl = Astro.site ? new URL("/images/greenlogo.png", Astro.site).href : "https://greenlightapprovals.io/images/greenlogo.png";
 const { Content } = await doc.render();
 const { data } = doc;
 ---
@@ -46,11 +47,13 @@ const { data } = doc;
     <link rel="canonical" href={canonical} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={data.description ?? "Greenlight Approvals documentation."} />
+    <meta property="og:image" content={imageUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={data.description ?? "Greenlight Approvals documentation."} />
+    <meta name="twitter:image" content={imageUrl} />
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,7 +82,7 @@ const { data } = doc;
             <ul>
               {items.map((item) => (
                 <li>
-                  <a class={item.slug === doc.slug ? "is-active" : ""} href={`/docs/${item.slug}`}>
+                  <a class={item.slug === doc.slug ? "is-active" : ""} href={`/docs/${item.slug}/`}>
                     {item.data.title}
                   </a>
                   {item.data.description && <small>{item.data.description}</small>}

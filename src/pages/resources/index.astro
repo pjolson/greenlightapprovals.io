@@ -11,7 +11,7 @@ const library = sorted;
 const canonical = Astro.site ? new URL("/resources/", Astro.site).href : "https://greenlightapprovals.io/resources/";
 const imageUrl = Astro.site ? new URL("/images/greenlogo.png", Astro.site).href : "https://greenlightapprovals.io/images/greenlogo.png";
 const pageTitle = "Resources | Greenlight Approvals";
-const pageDescription = "Product updates, compliance tips, and how-tos from the Greenlight Approvals team.";
+const pageDescription = "Product updates, compliance tips, and how-tos for NetSuite approval workflows from the Greenlight Approvals team. Budget enforcement, audit readiness, and more.";
 ---
 
 <!DOCTYPE html>
@@ -64,7 +64,8 @@ const pageDescription = "Product updates, compliance tips, and how-tos from the 
         <div class="nav-links">
           <a href="/#features">Product</a>
           <a href="/#pricing">Pricing</a>
-          <a href="/resources">Resources</a>
+          <a href="/resources/">Resources</a>
+          <a href="/docs/">Docs</a>
           <a href="/#contact">Contact</a>
         </div>
         <a class="cta ghost" href="/#contact">Book a Demo</a>
@@ -149,8 +150,8 @@ const pageDescription = "Product updates, compliance tips, and how-tos from the 
         <p>© {new Date().getFullYear()} Greenlight Software LLC • Wyoming</p>
       </div>
       <div class="footer-links">
-        <a href="/privacy">Privacy</a>
-        <a href="/terms">Terms</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
         <a href="#top">Back to top</a>
       </div>
     </footer>

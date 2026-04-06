@@ -1,6 +1,6 @@
 ---
 title: "When Your Approval Tool Doesn't Re-Evaluate"
-description: "A real story about 150 purchase orders, a routine edit, and an approval gap nobody saw coming."
+description: "A real story about 150 purchase orders, a routine edit, and an approval gap nobody saw coming. Why rule re-evaluation matters for NetSuite compliance."
 pubDate: 2026-02-01
 tags: ["approvals", "NetSuite", "compliance"]
 featured: false

@@ -1,6 +1,6 @@
 ---
 title: "Budget Intelligence Overview"
-description: "How Greenlight enforces budgets and alerts approvers before spend exceeds plan."
+description: "How Greenlight enforces budgets and alerts approvers before spend exceeds plan. Live MTD, QTD, and YTD budget vs. actual data inside the NetSuite approval tray."
 section: "Budgeting"
 order: 2
 ---

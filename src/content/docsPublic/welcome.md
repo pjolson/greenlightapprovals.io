@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Greenlight Approvals"
-description: "Overview of the NetSuite-native approvals, budgeting, and compliance suite."
+description: "Overview of the NetSuite-native approvals, budgeting, and compliance suite. Get started with routing rules, budget intelligence, and audit-ready logging."
 section: "Getting started"
 order: 1
 ---
