@@ -1,5 +1,5 @@
 ---
-title: "The Real Cost of Approval Workflow Audit Prep"
+title: "NetSuite Approval Audit Prep: The Real Cost"
 description: "Finance teams spend weeks every audit cycle assembling approval evidence by hand. Here's where that time actually goes — and why it doesn't have to be this way."
 pubDate: 2026-02-09
 tags: ["audit", "compliance", "NetSuite"]

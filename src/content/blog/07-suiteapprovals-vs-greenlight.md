@@ -1,5 +1,5 @@
 ---
-title: "SuiteApprovals vs Greenlight: Which Fits?"
+title: "SuiteApprovals vs Greenlight Approvals"
 description: "SuiteApprovals vs Greenlight Approvals compared — routing, budget awareness, SoD, audit depth, and when to upgrade from NetSuite's native tool."
 pubDate: 2026-04-05
 tags: ["approvals", "NetSuite", "compliance", "comparison"]

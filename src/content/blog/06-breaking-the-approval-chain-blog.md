@@ -1,6 +1,6 @@
 ---
-title: "When Someone Needs to Break the Approval Chain"
-description: "Overrides aren't failures — they're inevitable. The question is whether your system documents them or leaves gaps your auditors will find later."
+title: "Breaking the NetSuite Approval Chain"
+description: "NetSuite approval overrides are inevitable. The question is whether your system documents them or leaves gaps your auditors will find later."
 pubDate: 2026-02-26
 tags: ["approvals", "compliance", "NetSuite", "audit"]
 featured: true

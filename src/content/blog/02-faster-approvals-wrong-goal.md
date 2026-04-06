@@ -1,5 +1,5 @@
 ---
-title: "Why \"Faster Approvals\" Is the Wrong Goal"
+title: "Faster NetSuite Approvals? Wrong Goal"
 description: "The approval workflow conversation in NetSuite is stuck on the wrong metric. Here's why speed isn't what your finance team actually needs."
 pubDate: 2026-02-07
 tags: ["approvals", "NetSuite", "workflow"]

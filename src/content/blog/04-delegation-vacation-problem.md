@@ -1,6 +1,6 @@
 ---
-title: "Approval Delegation Done Wrong: The Vacation Problem"
-description: "Someone goes on vacation. Approvals pile up. And then things start to break in ways that won't surface until your next audit."
+title: "NetSuite Approval Delegation Done Wrong"
+description: "Someone goes on vacation and NetSuite approvals pile up. How poor delegation handling creates audit gaps and what system-enforced controls should look like."
 pubDate: 2026-02-11
 tags: ["approvals", "delegation", "audit"]
 featured: false
