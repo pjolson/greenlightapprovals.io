@@ -1,5 +1,5 @@
 ---
-title: "Approve NetSuite Transactions from Email — Without Losing Context or Control"
+title: "Approve NetSuite Transactions from Email Without Losing Context or Control"
 description: "Most NetSuite email approvals tell you something needs approval. Greenlight sends everything you need to make the decision, including line items, budget data, delegation status, and compliance warnings. No login required."
 pubDate: 2026-05-14
 tags: ["approvals", "NetSuite", "email", "compliance", "license costs"]
