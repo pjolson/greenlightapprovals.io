@@ -3,7 +3,7 @@ title: "ZoneApprovals vs Greenlight Approvals"
 description: "A side-by-side comparison of ZoneApprovals and Greenlight Approvals for NetSuite — AP automation focus vs compliance-first design, and where each fits."
 pubDate: 2026-04-10
 tags: ["approvals", "NetSuite", "compliance", "comparison"]
-featured: true
+featured: false
 ---
 
 ZoneApprovals from Zone & Co is a well-established NetSuite approval workflow tool. It's part of a broader AP automation suite, supports drag-and-drop configuration, and handles bulk approvals at scale. For AP-heavy teams that need fast transaction processing, it's a strong option.

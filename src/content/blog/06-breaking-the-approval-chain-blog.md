@@ -3,7 +3,7 @@ title: "Breaking the NetSuite Approval Chain"
 description: "NetSuite approval overrides are inevitable. The question is whether your system documents them or leaves gaps your auditors will find later."
 pubDate: 2026-02-26
 tags: ["approvals", "compliance", "NetSuite", "audit"]
-featured: true
+featured: false
 ---
 
 Every approval workflow has a breaking point. Not a flaw — a moment where the business needs to move faster than the rules allow.

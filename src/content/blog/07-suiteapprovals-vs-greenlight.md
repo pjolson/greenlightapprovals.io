@@ -3,7 +3,7 @@ title: "SuiteApprovals vs Greenlight Approvals"
 description: "SuiteApprovals vs Greenlight Approvals compared — routing, budget awareness, SoD, audit depth, and when to upgrade from NetSuite's native tool."
 pubDate: 2026-04-05
 tags: ["approvals", "NetSuite", "compliance", "comparison"]
-featured: true
+featured: false
 ---
 
 SuiteApprovals is NetSuite's built-in approval workflow SuiteApp. It ships with the platform, supports a solid range of transaction types, and handles the fundamentals well. For many organizations, it's the natural starting point — and for some, it's all they need.
