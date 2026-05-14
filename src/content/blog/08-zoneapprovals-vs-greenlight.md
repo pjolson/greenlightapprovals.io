@@ -22,7 +22,7 @@ ZoneApprovals is part of Zone & Co's AP automation platform, which gives it a st
 
 **3-way matching:** Built-in support for matching vendor bills against purchase orders and item receipts, with line-level inconsistency tracking and threshold allowances. This is a strong feature for AP teams dealing with vendor bill exceptions.
 
-**Email approvals:** Approvers can act on transactions via email without logging into NetSuite. Delegation is automated to maintain workflow continuity when approvers are unavailable.
+**Email approvals:** Approvers can act on transactions via email without logging into NetSuite. Delegation is automated to maintain workflow continuity when approvers are unavailable. (Greenlight also supports [email approvals with full transaction context](/resources/10-netsuite-email-approvals/), including line items and compliance warnings.)
 
 **Approval controls:** Options include mandatory approval/rejection reasons at the global, subsidiary, or transaction level. A "require one approval per employee" setting prevents duplicate approvals on the same transaction.
 

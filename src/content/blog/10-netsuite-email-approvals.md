@@ -1,6 +1,6 @@
 ---
-title: "Approve NetSuite Transactions from Email Without Losing Context or Control"
-description: "Most NetSuite email approvals tell you something needs approval. Greenlight sends everything you need to make the decision, including line items, budget data, delegation status, and compliance warnings. No login required."
+title: "Approve NetSuite Transactions from Email"
+description: "Most NetSuite email approvals are just reminders to log in. Greenlight sends the full transaction, line items, and compliance warnings. No license required."
 pubDate: 2026-05-14
 tags: ["approvals", "NetSuite", "email", "compliance", "license costs"]
 featured: true
@@ -32,7 +32,7 @@ That's a real approval email. It includes the transaction header (amount, vendor
 
 Two things in that screenshot matter more than the transaction data.
 
-**The delegation notice.** This step was delegated from Baruch Simmons to Larry Nelson. The email says so explicitly: who delegated, who received it, and that only the delegate can approve. No ambiguity about why Larry is seeing this instead of Baruch. That context lives in the email, not buried in a workflow log inside NetSuite.
+**The delegation notice.** This step was delegated from Baruch Simmons to Larry Nelson. The email says so explicitly: who delegated, who received it, and that only the delegate can approve. No ambiguity about why Larry is seeing this instead of Baruch. That context lives in the email, not buried in a workflow log inside NetSuite. (We wrote more about why [delegation done wrong creates audit gaps](/resources/04-delegation-vacation-problem/).)
 
 **The segregation of duties warning.** Larry created this transaction. The email tells him, in a red notice he can't miss, that approving it will be logged as a self-approval exception. He can still approve if the situation warrants it, but the system isn't silent about the conflict. The audit log captures it either way.
 
@@ -84,7 +84,7 @@ That's $21,600/year.
 
 Move those approvals to email. The employee records stay in NetSuite. They're still valid approvers, still in the routing rules, still in the org hierarchy. They just don't need to log in anymore. Their licenses can be reassigned to users who actually work in the system, or removed entirely.
 
-The approvers see more context in the email than most of them were reviewing in NetSuite anyway. The audit trail is the same. The compliance controls are the same. The only thing that changes is the license bill.
+The approvers see more context in the email than most of them were reviewing in NetSuite anyway. The audit trail is the same. The compliance controls are the same. The only thing that changes is the license bill. If you're evaluating how your current approval setup holds up, start with these [5 red flags your auditor will find before you do](/resources/5-red-flags-approval-workflow/).
 
 ---
 

@@ -24,7 +24,7 @@ SuiteApprovals covers a broad set of approval use cases out of the box. It's inc
 
 **Delegation:** Approvers can delegate their authority to another employee with start and end dates. Both the original approver and the delegate receive notifications.
 
-**Email approvals:** Approvers can approve or reject transactions directly from email with PDF attachments, HMAC validation, and a gatekeeping log for oversight.
+**Email approvals:** Approvers can approve or reject transactions directly from email with PDF attachments, HMAC validation, and a gatekeeping log for oversight. (For a deeper look at what email approvals should include, see our post on [approving NetSuite transactions from email](/resources/10-netsuite-email-approvals/).)
 
 **Record locking and reapproval:** Rules can lock records during specific statuses and trigger reapproval if the transaction amount changes beyond a configured tolerance — either by percentage or value.
 

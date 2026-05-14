@@ -1,6 +1,6 @@
 ---
-title: "Charted Approval Automation vs Greenlight Approvals for NetSuite"
-description: "Charted vs Greenlight Approvals compared — AP suite bundling vs compliance-first design, budget intelligence, SoD enforcement, audit depth, and where each fits for NetSuite teams."
+title: "Charted vs Greenlight Approvals for NetSuite"
+description: "Charted vs Greenlight Approvals compared. AP suite bundling vs compliance-first design, budget intelligence, SoD enforcement, and audit depth."
 pubDate: 2026-04-22
 tags: ["approvals", "NetSuite", "compliance", "comparison"]
 featured: true
@@ -99,7 +99,7 @@ Greenlight publishes pricing directly: Core at $499/month and Professional at $1
 - Eliminating NetSuite approver license fees is a key cost driver
 - Super approver flexibility to skip steps and reassign mid-process fits your workflow
 - You prefer a single vendor covering the full procure-to-pay cycle
-- Email-based approvals without NetSuite login are important for your approver base
+- Email-based approvals without NetSuite login are important for your approver base (Greenlight also offers [full-context email approvals](/resources/10-netsuite-email-approvals/) with line items, SoD warnings, and no license required)
 
 **Greenlight Approvals is a better fit if:**
 
