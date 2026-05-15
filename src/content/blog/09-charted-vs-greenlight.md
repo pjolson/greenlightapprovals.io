@@ -3,7 +3,7 @@ title: "Charted vs Greenlight Approvals for NetSuite"
 description: "Charted vs Greenlight Approvals compared. AP suite bundling vs compliance-first design, budget intelligence, SoD enforcement, and audit depth."
 pubDate: 2026-04-22
 tags: ["approvals", "NetSuite", "compliance", "comparison"]
-featured: true
+featured: false
 ---
 
 Charted (formerly SquareWorks Consulting) offers an AP automation suite built natively inside NetSuite. Approval automation is one component of that suite, sitting alongside invoice AI, payment processing, 3-way matching, and accrual automation. For AP teams that want a single vendor covering the full procure-to-pay cycle, the bundled approach has clear advantages.
