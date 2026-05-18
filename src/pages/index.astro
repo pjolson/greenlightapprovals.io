@@ -75,78 +75,6 @@ const differentiators = [
   },
 ];
 
-const roadmap = [
-  {
-    phase: "Now",
-    title: "Phase 5 Reporting &amp; Analytics wrap-up",
-    detail: "Saved search catalog notes, KPI widgets, and exception dashboards for finance leaders.",
-  },
-  {
-    phase: "Next",
-    title: "Budget Enforcement GA",
-    detail: "Department + vendor budget controls with CFO escalations and tray visualizations.",
-  },
-  {
-    phase: "Q1 2026",
-    title: "Compliance Packs &amp; Partner launch",
-    detail: "Modular audit packages, partner enablement, and Slack/Teams notifications.",
-  },
-];
-
-const pricing = [
-  {
-    tier: "Core",
-    price: "$499/mo",
-    description: "Linear approvals for smaller finance teams that need to get out of email chains.",
-    bullets: [
-      "Unlimited approvers",
-      "Single-step manager→director→VP workflows",
-      "4-dimension matching (amount, department, class, location)",
-      "Outbound assignment emails",
-      "Immutable audit log with standard support",
-    ],
-  },
-  {
-    tier: "Professional",
-    price: "$1,199/mo",
-    description: "Budget Intelligence + Audit Package for mid-market teams ready for compliance.",
-    bullets: [
-      "Budget intelligence (MTD/YTD) with line-level segment matching and alerts",
-      "Multi-step routing across core dimensions (amount, dept/class/location, project/vendor/customer)",
-      "Email approvals with exception detection; SoD warn/enforce (self/duplicate) with basic notifications",
-      "One-click audit package exports (standard catalog) and immutable audit logs",
-      "Supports 3 subsidiaries with standard support",
-    ],
-  },
-  {
-    tier: "Enterprise",
-    price: "Let's Talk",
-    description: "Governance & Unlimited — global control tower with executive dashboards and dedicated CSM.",
-    bullets: [
-      "Unlimited subsidiaries/entities and cross-entity/intercompany orchestration",
-      "Unlimited custom audit reports, dashboards, and export catalogs; executive reporting",
-      "Advanced governance: SoD Block & Notify with SoD group emails, delegation/edge handling",
-      "AI assistant roadmap; future GRC modules (incident/attestation/control testing) included when available",
-      "Dedicated CSM/white-glove implementation; priority SLA",
-    ],
-  },
-];
-
-const futureFocus = [
-  {
-    title: "AI Approval Assistant",
-    detail: "In active development: summarizes approvals, suggests routing, and flags policy exceptions before submission.",
-  },
-  {
-    title: "Compliance packs",
-    detail: "Pre-built reporting bundles for SOX, ISO, and healthcare certifications ship as add-ons.",
-  },
-  {
-    title: "Planning connectors",
-    detail: "Connect NetSuite approvals to FP&A tools so forecasts update the second a transaction is approved.",
-  },
-];
-
 const canonical = Astro.site ? new URL("/", Astro.site).href : "https://greenlightapprovals.io/";
 const imageUrl = canonical.replace(/\/$/, "") + (seo.image.startsWith("/") ? seo.image : "/" + seo.image);
 
@@ -251,7 +179,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
             <a href="/resources/">Resources</a>
             <a href="#contact">Contact</a>
           </div>
-          <a class="cta ghost" href="#contact">Book a Demo</a>
+          <a class="cta ghost" href={meetingUrl} target="_blank" rel="noopener noreferrer">Book a Demo</a>
         </nav>
         <div class="hero-grid">
           <div class="hero-copy">
@@ -262,7 +190,8 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
               unlimited approvers, and one-click audit packs. Designed from the documentation up.
             </p>
             <div class="cta-row">
-              <a class="cta" href="#contact">Request Access</a>
+              <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Book a Demo</a>
+              <a class="cta secondary" href="#contact">Send Us a Message</a>
             </div>
             <div class="pill-trail">
               <span class="pill">SOX-ready</span>
@@ -270,7 +199,7 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
               <span class="pill">Budget intelligence</span>
             </div>
             <div class="founding-banner">
-              Founding Customer pricing — limited-time offer that locks in for 2 years.
+              Early adopter pricing available — lock in your rate for 2 years.
             </div>
           </div>
           <div class="hero-visual">
@@ -368,6 +297,16 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         </div>
       </section>
 
+      <section class="section cta-band" style="text-align: center; border: 1px solid rgba(16, 185, 129, 0.25);">
+        <h2>See Greenlight in your NetSuite environment.</h2>
+        <p style="color: var(--muted); max-width: 480px; margin: 0.75rem auto 1.5rem;">
+          30-minute walkthrough tailored to your approval workflows. No pitch deck.
+        </p>
+        <div class="cta-row" style="justify-content: center;">
+          <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Pick a Time</a>
+        </div>
+      </section>
+
       <div id="feature-overlay" class="feature-overlay" inert>
         <div class="feature-overlay__backdrop" data-close-overlay></div>
         <div class="feature-overlay__content" role="dialog" aria-modal="true" aria-label="Feature preview">
@@ -402,29 +341,15 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
       <section id="pricing" class="section">
         <div class="section-head">
           <p class="eyebrow">Pricing</p>
-          <h2>Simple tiers. Unlimited approvers. Compliance add-ons ready.</h2>
+          <h2>Unlimited approvers. No per-seat fees.</h2>
+          <p>
+            Plans start at $499/mo. Every tier includes unlimited approvers so your whole finance team is covered.
+            We'll walk through the right fit on a call.
+          </p>
         </div>
-        <div class="founding-card compact">
-          Founding Partner rates available for early adopters and implementation partners. Lock in these rates for 2 years.
-        </div>
-        <div class="pricing-grid">
-          {pricing.map((tier) => (
-            <article class={`pricing-card${tier.tier === "Enterprise" ? " pricing-card--enterprise" : ""}`}>
-              <div>
-                <p class="eyebrow">{tier.tier}</p>
-                <h3>{tier.price}</h3>
-                <p>{tier.description}</p>
-              </div>
-              <ul>
-                {tier.bullets.map((bullet) => (
-                  <li>{bullet}</li>
-                ))}
-              </ul>
-              {tier.tier === "Enterprise" && (
-                <a class="cta" href="#contact">Book a Demo</a>
-              )}
-            </article>
-          ))}
+        <div class="cta-row" style="justify-content: center;">
+          <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">See Pricing on a Demo Call</a>
+          <a class="cta secondary" href="#contact">Or Send Us a Message</a>
         </div>
       </section>
 
@@ -438,9 +363,10 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
           <span>Unlimited approvers across subsidiaries</span>
           <span>Budget enforcement + audit packs included</span>
         </div>
-        <p class="contact-scheduler">
-          Prefer to pick a time? <a href={meetingUrl} target="_blank" rel="noopener noreferrer" class="contact-scheduler__link">Schedule a call</a>
-        </p>
+        <div class="cta-row" style="justify-content: center; margin-bottom: 1.5rem;">
+          <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Pick a Time That Works</a>
+        </div>
+        <p style="text-align: center; color: var(--muted); margin-bottom: 1.5rem;">or drop your info below and we'll reach out</p>
         <div class="form-shell contact-form">
           <!-- HubSpot form loaded lazily via IntersectionObserver -->
           <div
