@@ -6,7 +6,7 @@ tags: ["approvals", "compliance", "NetSuite", "audit"]
 featured: false
 ---
 
-Every approval workflow has a breaking point. Not a flaw — a moment where the business needs to move faster than the rules allow.
+Every approval workflow has a breaking point. Not a flaw. A moment where the business needs to move faster than the rules allow.
 
 A vendor threatens to pull a critical shipment if the PO isn't approved by end of day. The assigned approver is unreachable. The backup is in a different time zone. The CFO is standing in the doorway asking why this isn't done yet.
 
@@ -20,7 +20,7 @@ Most NetSuite approval workflows are built around a single assumption: every tra
 
 But "most of the time" isn't good enough when the exception arrives.
 
-In practice, overrides happen in one of a few ways — and almost none of them are clean.
+In practice, overrides happen in one of a few ways. Almost none of them are clean.
 
 **The admin shortcut.** An administrator changes the approval status directly on the transaction record. The PO moves forward. The system shows it as "approved," but there's no record of who actually made the call or why the normal chain was bypassed.
 
@@ -32,21 +32,19 @@ All three approaches accomplish the same thing: the transaction moves forward. B
 
 ## Why Overrides Aren't the Problem
 
-Here's what most approval workflow discussions get wrong: they treat overrides as failures. A sign that the rules weren't designed properly. Something to be minimized or eliminated.
+Most approval workflow conversations treat overrides as failures. A sign that the rules weren't designed properly. Something to minimize or eliminate. But that misses how business actually works.
 
-That's not realistic.
-
-Overrides exist because business operates in conditions that rules can't fully anticipate. A CFO overriding a stalled approval chain isn't a breakdown in controls. It's an executive exercising judgment — which is exactly what their role requires.
+Overrides exist because business operates in conditions that rules can't fully anticipate. A CFO overriding a stalled approval chain isn't a breakdown in controls. It's an executive exercising judgment. That's what their role requires.
 
 The problem isn't the override. The problem is an override that leaves no trace.
 
-An auditor reviewing your approval controls doesn't expect zero exceptions. They expect that exceptions are documented, authorized by someone with appropriate authority, and accompanied by a reason. A clean override with a full trail is evidence of a mature control environment. A missing approval with no explanation is a finding.
+An auditor reviewing your approval controls doesn't expect zero exceptions. They expect that exceptions are documented, authorized by someone with appropriate authority, and accompanied by a reason. A clean override with a full trail is something auditors accept. A missing approval with no explanation is a finding.
 
 ## What an Override Should Actually Look Like
 
 A properly designed override has four characteristics:
 
-**Restricted authority.** Not everyone can override. The system enforces who has the ability to break the chain, typically limited to specific roles or individuals. If a staff accountant can override a $500K purchase order, that's not an override — that's an open door.
+**Restricted authority.** Not everyone can override. The system enforces who has the ability to break the chain, typically limited to specific roles or individuals. If a staff accountant can override a $500K purchase order, that's not an override. That's an open door.
 
 **Tied to the transaction.** The override applies to a specific transaction, not to the system as a whole. No rule gets suspended. No permission gets temporarily escalated. One transaction gets approved outside the normal routing and everything else continues as designed.
 
@@ -58,7 +56,7 @@ A properly designed override has four characteristics:
 
 The immediate cost is small. One transaction, one workaround, problem solved.
 
-The cumulative cost is significant. Every undocumented override is a potential audit finding. A pattern of undocumented overrides suggests a control environment that isn't functioning as designed. And once an auditor identifies that pattern, the remediation isn't fixing one transaction — it's proving that your entire approval process can be trusted.
+The cumulative cost is what gets you. Every undocumented override is a potential audit finding. A pattern of undocumented overrides suggests a control environment that isn't functioning as designed. And once an auditor identifies that pattern, the remediation isn't fixing one transaction — it's proving that your entire approval process can be trusted.
 
 Finance teams that have been through this know the drill. Weeks of [pulling transaction histories, cross-referencing email threads](/resources/03-real-cost-audit-prep/), interviewing approvers about decisions they made months ago, and assembling evidence packages that should have been created automatically.
 

@@ -8,11 +8,11 @@ featured: true
 
 Segregation of duties is one of those controls that everyone agrees matters and almost nobody can prove is working.
 
-The concept is simple. The person who creates a transaction shouldn't be the one approving it. The person who approves step one shouldn't also approve step two. These separations exist to prevent fraud, catch errors, and give auditors confidence that no single person can push a transaction through unchecked.
+The rule is straightforward. The person who creates a transaction shouldn't be the one approving it. The person who approves step one shouldn't also approve step two. These separations exist to prevent fraud, catch errors, and give auditors confidence that no single person can push a transaction through unchecked.
 
-In practice, proving that these separations are actually enforced across every transaction, every approval step, and every edge case is a different problem entirely.
+In practice, proving that these separations are actually enforced across every transaction, every approval step, and every edge case is where it falls apart.
 
-## The Gap Between Policy and Proof
+## Policy Says One Thing, the System Does Another
 
 Most organizations have a segregation of duties policy. It lives in a Word document, a wiki page, or a section of the employee handbook. It says things like "the creator of a purchase order cannot also approve it" and "no single individual should control both the initiation and authorization of a financial transaction."
 
@@ -20,9 +20,9 @@ The policy exists. The question auditors ask is whether the system enforces it.
 
 In a lot of NetSuite environments, the answer is: we think so, but we'd have to check. And "checking" means pulling transaction histories, cross-referencing who created each record with who approved it, and manually verifying that no one approved their own work. For a sample of 50 transactions, that might take a few hours. For a full population review, it can take days.
 
-The deeper problem is that even when someone does this analysis and finds no violations, they've only proven that violations didn't happen. They haven't proven that the system would have prevented one. An auditor testing the design of a control, not just the operating effectiveness, will ask: what would happen if the creator tried to approve their own PO right now? If the answer is "the system would let them and we'd catch it in review," that's a detective control, not a preventive one. Auditors value both, but preventive controls carry more weight.
+And even when someone does this analysis and finds no violations, they've only proven that violations didn't happen. They haven't proven that the system would have prevented one. An auditor testing the design of a control, not just the operating effectiveness, will ask: what would happen if the creator tried to approve their own PO right now? If the answer is "the system would let them and we'd catch it in review," that's a detective control, not a preventive one. Auditors value both, but preventive controls carry more weight.
 
-## The Scattered Evidence Problem
+## Evidence Is Everywhere Except One Place
 
 In many organizations, the evidence that segregation of duties is being maintained doesn't live in one place.
 

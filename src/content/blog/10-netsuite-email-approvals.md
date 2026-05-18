@@ -12,7 +12,7 @@ That's not approving from email. That's a reminder to go approve in NetSuite.
 
 The problem is that these emails don't contain enough information to actually make a decision. The approver still needs a login, still needs a license, and still needs to navigate the UI to see what they're approving. The email is just a doorbell.
 
-## The License Problem Nobody Talks About
+## License Costs for People Who Click One Button
 
 NetSuite user licenses run $129 to $199/month. Every person who needs to approve a transaction needs one. For a lot of organizations, that means paying $1,500 to $2,400/year for someone whose entire NetSuite interaction is clicking "Approve" on a handful of POs each week.
 
@@ -62,9 +62,9 @@ An informed email approval includes:
 
 When the email carries that context, the approver is making the same decision they'd make inside NetSuite, with the same information and the same compliance guardrails. The only difference is they didn't need a $2,000/year license to do it.
 
-## The Mobile Problem
+## Mobile Doesn't Help Either
 
-There's a related pain point here: NetSuite's mobile app doesn't support approving transactions. The app shows a generic "My Approvals" list that doesn't reflect actual approval assignments, and custom approval workflows don't carry over to the mobile experience. Approvers on the road, whether they're in meetings, on job sites, or between locations, either wait until they're at a laptop or don't approve at all.
+NetSuite's mobile app doesn't support approving transactions. The app shows a generic "My Approvals" list that doesn't reflect actual approval assignments, and custom approval workflows don't carry over to the mobile experience. Approvers on the road, whether they're in meetings, on job sites, or between locations, either wait until they're at a laptop or don't approve at all.
 
 Email works on every phone. No app to install, no mobile session to configure. The approval email renders on any device, and the Approve/Reject action works from any browser. For organizations where approval bottlenecks happen because decision-makers are away from their desks, email approvals are the simplest fix.
 
@@ -76,7 +76,7 @@ Not if the system is built correctly. Greenlight's email approvals write back to
 
 Segregation of duties enforcement doesn't relax because the channel changed. If an approver created the transaction and tries to approve it from email, the same SoD rules apply. Warn, block, or log, depending on how the rule is configured. The compliance controls travel with the approval, not with the interface.
 
-## The Math
+## Run the Numbers
 
 Take a mid-market NetSuite customer with 12 approval-only users, each paying $150/month for a license they use for 30 seconds at a time.
 
