@@ -186,17 +186,17 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
             <p class="eyebrow">NetSuite-Native • Compliance-first approvals</p>
             <h1>NetSuite-native approvals with an audit trail CFOs trust.</h1>
             <p class="lede">
-              Replace spreadsheets, email daisy chains, and brittle scripts with a native NetSuite tray,
-              unlimited approvers, and one-click audit packs. Designed from the documentation up.
+              Audit prep takes your team weeks. Approvals live in email chains nobody trusts.
+              Greenlight fixes both — inside NetSuite, with a trail that's ready before your auditor asks.
             </p>
             <div class="cta-row">
               <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Book a Demo</a>
               <a class="cta secondary" href="#contact">Send Us a Message</a>
             </div>
             <div class="pill-trail">
-              <span class="pill">SOX-ready</span>
-              <span class="pill">Audit-ready in seconds</span>
-              <span class="pill">Budget intelligence</span>
+              <span class="pill">Audit prep in minutes, not weeks</span>
+              <span class="pill">Zero approval bottlenecks</span>
+              <span class="pill">100% audit trail coverage</span>
             </div>
             <div class="founding-banner">
               Early adopter pricing available — lock in your rate for 2 years.
@@ -216,6 +216,13 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
           </div>
         </div>
       </header>
+
+      <div class="trust-bar">
+        <span>100% SuiteScript + SuiteQL</span>
+        <span>No external services</span>
+        <span>Your data stays in NetSuite</span>
+        <span>Unlimited approvers, every plan</span>
+      </div>
 
       <section id="features" class="section">
         <div class="section-head">
@@ -282,10 +289,6 @@ const safeJsonLd = JSON.stringify(structuredData).replace(/<\/script/gi, "<\\/sc
         <div class="section-head">
           <p class="eyebrow">Why it matters</p>
           <h2>Native, compliant, and priced for unlimited approvers.</h2>
-          <p>
-            Outcomes and differentiation: faster close, cleaner audits, richer visibility, and pricing built for
-            whole finance teams instead of per-seat add-ons.
-          </p>
         </div>
         <div class="card-grid four">
           {differentiators.map((item) => (
