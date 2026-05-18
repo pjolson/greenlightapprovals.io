@@ -127,6 +127,18 @@ const imageUrl = Astro.site
     <script is:inline>
       (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='//js-eu1.hs-scripts.com/147146964.js';s.async=true;document.body.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});})();
     </script>
+    <script is:inline>
+      document.querySelectorAll('a.cta').forEach(function(link) {
+        link.addEventListener('click', function() {
+          gtag('event', 'demo_booking_click', {
+            event_category: 'conversion',
+            event_label: link.textContent.trim()
+          });
+          // TODO: Uncomment and replace AW-XXXXXXXXX/XXXXXXXX with your Google Ads conversion ID
+          // gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXX/XXXXXXXX' });
+        });
+      });
+    </script>
   </body>
 </html>
 
