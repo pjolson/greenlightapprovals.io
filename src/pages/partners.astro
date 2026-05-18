@@ -1,0 +1,478 @@
+---
+import "../styles/global.css";
+
+const meetingUrl = "https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9";
+
+const seo = {
+  title: "Partner with Greenlight Approvals | NetSuite Implementation Partners",
+  description:
+    "Add approval workflows to your NetSuite practice. Greenlight Approvals gives implementation partners a native solution for budget enforcement, audit trails, and compliance — no scripting required.",
+};
+
+const canonical = Astro.site
+  ? new URL("/partners/", Astro.site).href
+  : "https://greenlightapprovals.io/partners/";
+const imageUrl = Astro.site
+  ? new URL("/images/greenlogo.png", Astro.site).href
+  : "https://greenlightapprovals.io/images/greenlogo.png";
+
+const partnerBenefits = [
+  {
+    title: "Expand your NetSuite practice",
+    detail: "Approval workflows come up in every implementation. Now you have a native answer instead of recommending workarounds or custom scripts.",
+  },
+  {
+    title: "Zero implementation burden",
+    detail: "Greenlight installs as a SuiteApp — no custom scripting, no external integrations. Your team doesn't need to build or maintain anything.",
+  },
+  {
+    title: "Revenue on every referral",
+    detail: "Earn referral commissions on every client you bring in. Recurring revenue, not a one-time finder's fee.",
+  },
+  {
+    title: "Client retention tool",
+    detail: "Clients with better controls stay longer. Greenlight gives your clients audit-ready trails and budget enforcement that strengthen your relationship.",
+  },
+];
+
+const clientPainPoints = [
+  {
+    problem: "\"We need approval workflows but don't want to build custom scripts.\"",
+    solution: "Greenlight is configuration, not code. Rules, steps, and routing — all point-and-click inside NetSuite.",
+  },
+  {
+    problem: "\"Our auditors keep asking for approval documentation.\"",
+    solution: "One-click audit export packs with immutable logs, timestamps, and exception flags. Audit prep in minutes.",
+  },
+  {
+    problem: "\"We can't enforce budget limits during the approval process.\"",
+    solution: "Live budget vs. actual shown inside every approval. Warn or block before overruns get approved.",
+  },
+  {
+    problem: "\"Approvals are stuck in email chains nobody can find.\"",
+    solution: "Native NetSuite tray UI replaces email chains. Every action logged, every decision traceable.",
+  },
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script is:inline>
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js',new Date());gtag('config','G-GXNCVNF4MR');
+      (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-GXNCVNF4MR';s.async=true;document.head.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});})();
+    </script>
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=optional"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=optional"
+        rel="stylesheet"
+      />
+    </noscript>
+    <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="xp9wU2UrMKiX2AEZ" data-version="062024"></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="NQLhQ4cgjNlAWF0UrjLDSA" async></script>
+  </head>
+  <body>
+    <main class="partners-page">
+      <div class="partners-brand">
+        <a href="/" class="partners-brand__link">
+          <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-label="Greenlight Approvals logo">
+            <defs>
+              <linearGradient id="logoGradientPartners" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6C63FF" />
+                <stop offset="100%" stop-color="#0FB59B" />
+              </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="54" fill="url(#logoGradientPartners)" />
+            <path
+              d="M44 61.5L58.2 75.7 82 48.5"
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>Greenlight Approvals</span>
+        </a>
+      </div>
+
+      <section class="partners-hero">
+        <p class="partners-eyebrow">For NetSuite Implementation Partners</p>
+        <h1>Your clients need approval workflows.<br />You shouldn't have to build them.</h1>
+        <p class="partners-lede">
+          Greenlight Approvals is a NetSuite-native SuiteApp that gives your clients
+          enterprise approval workflows, budget enforcement, and audit-ready trails —
+          without a single line of custom script from your team.
+        </p>
+        <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Schedule a Partner Call</a>
+        <p class="partners-subtext">30 minutes. We'll walk through the product and partnership model.</p>
+      </section>
+
+      <section class="partners-benefits">
+        <h2>Why partners work with us</h2>
+        <div class="partners-benefits__grid">
+          {partnerBenefits.map((item) => (
+            <div class="partners-benefits__card">
+              <strong>{item.title}</strong>
+              <p>{item.detail}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="partners-pain">
+        <h2>Sound familiar? Your clients say this all the time.</h2>
+        <div class="partners-pain__list">
+          {clientPainPoints.map((item) => (
+            <div class="partners-pain__item">
+              <p class="partners-pain__problem">{item.problem}</p>
+              <p class="partners-pain__solution">{item.solution}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="partners-video">
+        <h2>See the product in 90 seconds</h2>
+        <div class="partners-video__wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/kR00L4PH3Gk"
+            title="Greenlight Approvals – Approval Tray Demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="partners-how">
+        <h2>How it works</h2>
+        <div class="partners-how__steps">
+          <div class="partners-how__step">
+            <span class="partners-how__number">1</span>
+            <strong>You refer a client</strong>
+            <p>Introduce us when approval workflows come up. We handle the demo and sales process.</p>
+          </div>
+          <div class="partners-how__step">
+            <span class="partners-how__number">2</span>
+            <strong>We install and configure</strong>
+            <p>Greenlight deploys as a SuiteApp. We work with your client to set up rules and routing.</p>
+          </div>
+          <div class="partners-how__step">
+            <span class="partners-how__number">3</span>
+            <strong>You earn recurring revenue</strong>
+            <p>Referral commissions paid monthly for the life of the client. Not a one-time fee.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-cta-final">
+        <h2>Let's talk about what this looks like for your practice.</h2>
+        <p class="partners-subtext">No pressure. We'll show you the product and discuss how referrals work.</p>
+        <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Schedule a Partner Call</a>
+        <p class="partners-subtext">Or <a href="/#contact" class="partners-link">send a message</a> if you'd rather email first.</p>
+      </section>
+    </main>
+
+    <footer class="partners-footer">
+      <p>&copy; {new Date().getFullYear()} Greenlight Software LLC &bull; Wyoming</p>
+      <div class="partners-footer__links">
+        <a href="/">Home</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </footer>
+
+    <script is:inline>
+      (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='//js-eu1.hs-scripts.com/147146964.js';s.async=true;document.body.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});})();
+    </script>
+  </body>
+</html>
+
+<style>
+  .partners-page {
+    width: min(720px, calc(100% - 2.5rem));
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .partners-brand__link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .partners-brand .logo-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .partners-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .partners-hero {
+    text-align: center;
+  }
+
+  .partners-hero h1 {
+    font-size: clamp(1.75rem, 4vw, 2.4rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .partners-lede {
+    color: var(--muted);
+    max-width: 540px;
+    margin: 0 auto 1.75rem;
+    line-height: 1.6;
+  }
+
+  .partners-subtext {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  /* Benefits */
+  .partners-benefits h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .partners-benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 600px) {
+    .partners-benefits__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .partners-benefits__card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .partners-benefits__card strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+  }
+
+  .partners-benefits__card p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Pain points */
+  .partners-pain h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .partners-pain__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .partners-pain__item {
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .partners-pain__problem {
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .partners-pain__solution {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent);
+  }
+
+  /* Video */
+  .partners-video {
+    text-align: center;
+  }
+
+  .partners-video h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .partners-video__wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: #0b1220;
+  }
+
+  .partners-video__wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* How it works */
+  .partners-how h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .partners-how__steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 600px) {
+    .partners-how__steps {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .partners-how__step {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .partners-how__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .partners-how__step strong {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .partners-how__step p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Final CTA */
+  .partners-cta-final {
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    background: var(--surface-alt);
+  }
+
+  .partners-cta-final h2 {
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .partners-link {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .partners-link:hover {
+    text-decoration: none;
+  }
+
+  /* Footer */
+  .partners-footer {
+    width: min(720px, calc(100% - 2.5rem));
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .partners-footer__links {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .partners-footer__links a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .partners-footer__links a:hover {
+    color: var(--accent);
+  }
+
+  @media (max-width: 600px) {
+    .partners-footer {
+      flex-direction: column;
+      gap: 0.75rem;
+      text-align: center;
+    }
+  }
+</style>
