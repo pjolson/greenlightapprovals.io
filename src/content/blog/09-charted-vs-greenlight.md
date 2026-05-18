@@ -121,4 +121,4 @@ If your team needs a single suite covering invoices, payments, matching, and app
 
 ---
 
-*Greenlight Approvals is a NetSuite-native approval workflow engine built for finance teams that need audit-ready controls. Dynamic rule re-evaluation, budget-aware routing, segregation of duties enforcement, controlled overrides, and one-click audit packages — all configurable without custom scripting. See it at [greenlightapprovals.io](https://greenlightapprovals.io).*
+**Looking for approval depth, not AP suite breadth?** Greenlight focuses on the approval decision — budget context, SoD enforcement, dynamic re-evaluation, and audit exports that take minutes. [See it in a 30-minute walkthrough →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

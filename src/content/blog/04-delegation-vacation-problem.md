@@ -22,4 +22,4 @@ Quick test: If your VP went on vacation tomorrow, what would happen to their que
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness.*
+**What happens to your approval queue when someone's out?** Greenlight handles delegation with full audit trails — no shared logins, no admin workarounds. [See how it works →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

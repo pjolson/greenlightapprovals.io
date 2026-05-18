@@ -131,4 +131,4 @@ If your current approval process works and your auditors are satisfied, you may 
 
 ---
 
-*Greenlight Approvals is a NetSuite-native approval workflow engine built for finance teams that need audit-ready controls. Dynamic rule re-evaluation, budget-aware routing, segregation of duties enforcement, controlled overrides, and one-click audit packages — all configurable without custom scripting. See it at [greenlightapprovals.io](https://greenlightapprovals.io).*
+**Outgrowing SuiteApprovals?** If you need budget-aware routing, SoD enforcement, or audit prep that doesn't take weeks, Greenlight was built for that. [See the difference in a 30-minute walkthrough →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

@@ -22,4 +22,4 @@ When finance leaders say “our approvals take too long,” the real pain is oft
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness.*
+**Spending weeks on audit prep? Routing that doesn't match policy?** Those are the problems worth solving — not approval speed. [See how Greenlight builds defensibility into every approval →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

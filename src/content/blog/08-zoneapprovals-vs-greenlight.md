@@ -121,4 +121,4 @@ If your team processes high volumes of vendor bills and needs speed, ZoneApprova
 
 ---
 
-*Greenlight Approvals is a NetSuite-native approval workflow engine built for finance teams that need audit-ready controls. Dynamic rule re-evaluation, budget-aware routing, segregation of duties enforcement, controlled overrides, and one-click audit packages — all configurable without custom scripting. See it at [greenlightapprovals.io](https://greenlightapprovals.io).*
+**Need compliance depth, not just AP speed?** Greenlight adds budget intelligence, SoD enforcement, and one-click audit exports to your NetSuite approvals. [See how it compares in a live walkthrough →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

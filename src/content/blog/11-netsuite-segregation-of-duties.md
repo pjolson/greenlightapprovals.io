@@ -78,4 +78,4 @@ If it takes more than a few seconds, the control might exist as a policy but not
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness. Questions? [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).*
+**Can you prove your SoD controls are enforced — not just documented?** Greenlight blocks or flags violations at the point of approval, across every channel, with automatic evidence capture. [See SoD enforcement in a walkthrough →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

@@ -26,4 +26,4 @@ The Acme story stuck with me because it’s a perfect example of the gap between
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness.*
+**Does your approval routing reflect the current transaction — or the original?** If transactions change after submission and your routing doesn't re-evaluate, you have a gap auditors will find. [See how Greenlight handles dynamic re-evaluation →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

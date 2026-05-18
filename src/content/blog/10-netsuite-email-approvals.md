@@ -88,4 +88,4 @@ The approvers see more context in the email than most of them were reviewing in 
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness. Questions? [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).*
+**Cut NetSuite license costs without cutting compliance.** Greenlight's email approvals include full transaction context, line items, budget data, and SoD warnings — no login required. [See it in action →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

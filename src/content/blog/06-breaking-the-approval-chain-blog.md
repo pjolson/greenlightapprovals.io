@@ -72,4 +72,4 @@ If your current setup treats every override as an admin workaround, you're not s
 
 ---
 
-*Greenlight Approvals builds override controls directly into the approval engine. Restricted authority, transaction-level exceptions, required documentation, and a complete audit trail — so your team can move fast without creating gaps your auditors will find later. [Get in touch](/#contact).*
+**Overrides shouldn't be an admin workaround.** Greenlight builds override controls into the approval engine — restricted authority, required documentation, and a full audit trail. [See how controlled overrides work →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)

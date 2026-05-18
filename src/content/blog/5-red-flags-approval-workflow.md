@@ -24,4 +24,4 @@ None of these are about bad intent. They’re about reasonable people and system
 
 ---
 
-*Patrick is the founder of [Greenlight Approvals](/#contact), a NetSuite-native approval workflow platform built for audit readiness. Questions? [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).*
+**All five red flags are fixable.** Greenlight was built to close exactly these gaps — re-evaluation, SoD enforcement, audit trails, and delegation controls. [Book a 30-minute walkthrough →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)
