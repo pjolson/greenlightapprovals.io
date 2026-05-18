@@ -1,0 +1,259 @@
+---
+import "../styles/global.css";
+
+const meetingUrl = "https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9";
+
+const seo = {
+  title: "See Greenlight Approvals in Action | NetSuite-Native Approvals",
+  description:
+    "30-minute walkthrough of Greenlight Approvals inside your NetSuite environment. Budget enforcement, audit-ready trails, and unlimited approvers.",
+};
+
+const canonical = Astro.site
+  ? new URL("/demo/", Astro.site).href
+  : "https://greenlightapprovals.io/demo/";
+const imageUrl = Astro.site
+  ? new URL("/images/greenlogo.png", Astro.site).href
+  : "https://greenlightapprovals.io/images/greenlogo.png";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script is:inline>
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js',new Date());gtag('config','G-GXNCVNF4MR');
+      (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-GXNCVNF4MR';s.async=true;document.head.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});})();
+    </script>
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=optional"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=optional"
+        rel="stylesheet"
+      />
+    </noscript>
+    <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="xp9wU2UrMKiX2AEZ" data-version="062024"></script>
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="NQLhQ4cgjNlAWF0UrjLDSA" async></script>
+  </head>
+  <body>
+    <main class="demo-page">
+      <div class="demo-brand">
+        <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-label="Greenlight Approvals logo">
+          <defs>
+            <linearGradient id="logoGradientDemo" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6C63FF" />
+              <stop offset="100%" stop-color="#0FB59B" />
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="54" fill="url(#logoGradientDemo)" />
+          <path
+            d="M44 61.5L58.2 75.7 82 48.5"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span>Greenlight Approvals</span>
+      </div>
+
+      <section class="demo-hero">
+        <h1>Your NetSuite approval process is broken.<br />We'll show you how to fix it.</h1>
+        <p class="demo-lede">
+          Approvals stuck in email. Audit prep takes weeks. Budget overruns caught too late.
+          Greenlight fixes all three — inside NetSuite, in one native tray.
+        </p>
+        <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Book a 30-Minute Walkthrough</a>
+        <p class="demo-subtext">No pitch deck. We'll use your workflows as the example.</p>
+      </section>
+
+      <section class="demo-video">
+        <h2>See the approval tray in 90 seconds</h2>
+        <div class="demo-video__wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/kR00L4PH3Gk"
+            title="Greenlight Approvals – Approval Tray Demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="demo-proof">
+        <div class="demo-proof__item">
+          <strong>Audit prep in minutes</strong>
+          <p>One-click export packs replace weeks of spreadsheet work.</p>
+        </div>
+        <div class="demo-proof__item">
+          <strong>Budget intelligence built in</strong>
+          <p>Live budget vs. actual shown inside every approval — overruns flagged before they're approved.</p>
+        </div>
+        <div class="demo-proof__item">
+          <strong>Unlimited approvers, every plan</strong>
+          <p>No per-seat fees. Your whole finance team is covered.</p>
+        </div>
+      </section>
+
+      <section class="demo-cta-final">
+        <h2>30 minutes. Your NetSuite environment. No obligation.</h2>
+        <a class="cta" href={meetingUrl} target="_blank" rel="noopener noreferrer">Pick a Time</a>
+        <p class="demo-subtext">Or <a href="/#contact" class="demo-link">send us a message</a> if you'd rather email first.</p>
+      </section>
+    </main>
+
+    <script is:inline>
+      (function(){var d=false;function l(){if(d)return;d=true;var s=document.createElement('script');s.src='//js-eu1.hs-scripts.com/147146964.js';s.async=true;document.body.appendChild(s);}['scroll','mousemove','touchstart','keydown'].forEach(function(e){window.addEventListener(e,l,{once:true,passive:true});});})();
+    </script>
+  </body>
+</html>
+
+<style>
+  .demo-page {
+    width: min(640px, calc(100% - 2.5rem));
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .demo-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+  }
+
+  .demo-brand .logo-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .demo-hero {
+    text-align: center;
+  }
+
+  .demo-hero h1 {
+    font-size: clamp(1.75rem, 4vw, 2.4rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .demo-lede {
+    color: var(--muted);
+    max-width: 480px;
+    margin: 0 auto 1.75rem;
+    line-height: 1.6;
+  }
+
+  .demo-subtext {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .demo-video {
+    text-align: center;
+  }
+
+  .demo-video h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .demo-video__wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: #0b1220;
+  }
+
+  .demo-video__wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .demo-proof {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .demo-proof {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .demo-proof__item {
+    padding: 1.25rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .demo-proof__item strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--accent);
+  }
+
+  .demo-proof__item p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .demo-cta-final {
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    background: var(--surface-alt);
+  }
+
+  .demo-cta-final h2 {
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .demo-link {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .demo-link:hover {
+    text-decoration: none;
+  }
+</style>
