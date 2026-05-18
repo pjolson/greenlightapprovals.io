@@ -246,6 +246,14 @@ main {
   font-weight: 600;
 }
 
+.social-proof-bar {
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
 .founding-banner {
   margin-top: 1rem;
   padding: 0.85rem 1.2rem;
