@@ -198,6 +198,7 @@ const clientPainPoints = [
 
     <footer class="partners-footer">
       <p>&copy; {new Date().getFullYear()} Greenlight Software LLC &bull; Wyoming</p>
+      <p class="built-by">Built by <a href="https://mysuite.tech" target="_blank" rel="noopener noreferrer">MySuite Consulting</a></p>
       <div class="partners-footer__links">
         <a href="/">Home</a>
         <a href="/privacy/">Privacy</a>
@@ -466,6 +467,20 @@ const clientPainPoints = [
 
   .partners-footer__links a:hover {
     color: var(--accent);
+  }
+
+  .partners-footer .built-by {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+
+  .partners-footer .built-by a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .partners-footer .built-by a:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 600px) {

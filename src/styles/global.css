@@ -1042,6 +1042,20 @@ main {
   color: var(--text);
 }
 
+.built-by {
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.built-by a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.built-by a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
