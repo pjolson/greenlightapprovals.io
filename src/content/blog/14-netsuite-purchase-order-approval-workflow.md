@@ -24,7 +24,7 @@ That rejection path is where things start to fall apart.
 
 Here's what the standard workflow does when an approver clicks Reject: it changes the Approval Status field from "Pending Approval" to "Rejected," sends an email to the creator, and unlocks the record. That's it.
 
-There is no built-in mechanism to capture *why* the PO was rejected. No required reason field. No structured log of the rejection event. The approver clicks a button and the PO goes back to the creator with no context beyond whatever was written in the email notification — if anything was written at all.
+There is no built-in mechanism to capture *why* the PO was rejected. No required reason field. No structured log of the rejection event. The approver clicks a button and the PO goes back to the creator with no context beyond whatever was written in the email notification — if anything was written at all. [Your approvers don't know why they're approving](/resources/12-approvers-dont-know-why/), and the system doesn't know why they're rejecting either.
 
 This is manageable for the first rejection. The creator checks their email, reads the note, fixes the PO, and resubmits. But what happens when a PO is rejected a second time? Or a third?
 
@@ -53,7 +53,7 @@ Because the Transaction field creates a parent-child relationship, these records
 
 In the workflow, the Reject transition creates a new rejection record and routes the approver to fill in the reason. [Sikich](https://www.sikich.com/insight/netsuite-rejection-reasons-on-approval-workflows/) and [others](https://suiteanswersthatwork.com/netsuite-approval-workflow-rejection-reason-suitelet/) recommend using a Suitelet for this — when the approver clicks Reject, a popup opens requiring the reason before the transition completes. This avoids the timing problem where the record transitions to the Rejected state before the reason is captured, which can happen with a simple "Go to Record" action.
 
-Is this the only way to handle it? No. But it's the cleanest approach I've seen for keeping discrete data on each rejection loop without losing history. The alternative — a single body field that gets overwritten, or Notes that can't be reliably searched — creates exactly the kind of audit gap that's hard to explain when someone asks for the approval history on a seven-figure PO.
+Is this the only way to handle it? No. But it's the cleanest approach I've seen for keeping discrete data on each rejection loop without losing history. The alternative — a single body field that gets overwritten, or Notes that can't be reliably searched — creates exactly the kind of [audit gap that's hard to explain](/resources/03-real-cost-audit-prep/) when someone asks for the approval history on a seven-figure PO.
 
 ## The Other Gaps That Compound
 
@@ -69,7 +69,7 @@ Rejection tracking is the most common pain point, but it's not the only one. The
 
 **Transaction-level only.** Approval is for the entire PO. You can't route individual line items to different approvers based on GL account, department, or item category.
 
-These aren't obscure edge cases. They're the normal complexity of procurement in a mid-market company. The standard workflow was built for the simplest version of the problem, and most organizations hit at least two or three of these walls within the first year.
+These aren't obscure edge cases. They're the [red flags auditors look for](/resources/5-red-flags-approval-workflow/) — the normal complexity of procurement in a mid-market company that the standard workflow wasn't built to handle.
 
 ## What "Getting It Right" Looks Like
 
