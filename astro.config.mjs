@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
-      filter: (page) => !page.includes('/docs/'),
+      filter: (page) => !page.includes('/docs/') && !page.includes('/partners/') && !page.includes('/demo/'),
       serialize(item) {
         item.lastmod = new Date().toISOString();
         return item;
