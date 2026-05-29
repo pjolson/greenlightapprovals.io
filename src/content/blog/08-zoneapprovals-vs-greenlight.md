@@ -1,5 +1,5 @@
 ---
-title: "ZoneApprovals vs Greenlight Approvals"
+title: "ZoneApprovals vs Greenlight: NetSuite Approval Tools Compared (2026)"
 description: "A side-by-side comparison of ZoneApprovals and Greenlight Approvals for NetSuite — AP automation focus vs compliance-first design, and where each fits."
 pubDate: 2026-04-10
 tags: ["approvals", "NetSuite", "compliance", "comparison"]

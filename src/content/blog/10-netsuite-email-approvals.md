@@ -1,5 +1,5 @@
 ---
-title: "Approve NetSuite Transactions from Email"
+title: "NetSuite Email Approvals: Approve Without a Login or License"
 description: "Most NetSuite email approvals are just reminders to log in. Greenlight sends the full transaction, line items, and compliance warnings. No license required."
 pubDate: 2026-05-14
 tags: ["approvals", "NetSuite", "email", "compliance", "license costs"]

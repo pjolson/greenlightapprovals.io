@@ -552,6 +552,17 @@ main {
   background: transparent;
 }
 
+a.blog-link-card {
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+a.blog-link-card:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: translateY(-2px);
+}
+
 .metrics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));

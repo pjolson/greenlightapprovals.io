@@ -1,5 +1,5 @@
 ---
-title: "NetSuite Approval Workflows Across Multiple Subsidiaries"
+title: "Multi-Subsidiary NetSuite Approval Workflows (OneWorld)"
 description: "One approval rule per subsidiary. Copy it ten times. Pray nobody changes one without updating the rest. There's a better way to handle multi-sub approvals in NetSuite."
 pubDate: 2026-05-19
 tags: ["approvals", "NetSuite", "multi-subsidiary", "OneWorld", "approval workflow"]
