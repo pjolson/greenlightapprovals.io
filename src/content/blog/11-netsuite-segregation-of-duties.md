@@ -54,7 +54,7 @@ Small teams and delegation scenarios create situations where the only available 
 
 If the SoD configuration changes midstream, existing transactions should be governed by the policy that was in effect when they were created, not the current policy. Retroactive policy changes can invalidate prior audit evidence, so point-in-time snapshots matter.
 
-And if approvals can happen from the application UI, from email, or in bulk, the SoD check needs to run in all three paths. A control that enforces SoD in the tray but not in email isn't a control. It's a suggestion.
+And if approvals can happen from the application UI, from [email](/resources/10-netsuite-email-approvals/), or in bulk, the SoD check needs to run in all three paths. A control that enforces SoD in the tray but not in email isn't a control. It's a suggestion.
 
 ## How Greenlight Handles Segregation of Duties
 
