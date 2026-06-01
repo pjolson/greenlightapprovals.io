@@ -3,7 +3,7 @@ title: "NetSuite Segregation of Duties: Can You Prove It's Enforced?"
 description: "Most NetSuite teams can't prove segregation of duties is enforced. Here's why that's a problem and what system-level SoD controls should look like."
 pubDate: 2026-05-15
 tags: ["approvals", "NetSuite", "compliance", "segregation of duties", "audit"]
-featured: true
+featured: false
 ---
 
 Segregation of duties is one of those controls that everyone agrees matters and almost nobody can prove is working.

@@ -3,7 +3,7 @@ title: "Multi-Subsidiary NetSuite Approval Workflows (OneWorld)"
 description: "One approval rule per subsidiary. Copy it ten times. Pray nobody changes one without updating the rest. There's a better way to handle multi-sub approvals in NetSuite."
 pubDate: 2026-05-19
 tags: ["approvals", "NetSuite", "multi-subsidiary", "OneWorld", "approval workflow"]
-featured: true
+featured: false
 ---
 
 The first subsidiary is easy. You build an approval rule for purchase orders. Manager approves up to $5,000, director up to $25,000, VP of Finance above that. It works. Transactions route correctly, approvers know what to do, and the audit trail is clean.

@@ -3,7 +3,7 @@ title: "NetSuite Purchase Order Approval Workflows: What Most Companies Get Wron
 description: "The standard NetSuite PO approval workflow handles the happy path. It's the rejection cycles, missing audit trails, and overwritten data that create real problems."
 pubDate: 2026-05-25
 tags: ["NetSuite", "purchase orders", "approval workflows", "audit", "SuiteFlow"]
-featured: true
+featured: false
 ---
 
 The standard Purchase Order Approval Workflow in NetSuite covers the basics. A PO gets created, routed to a supervisor or purchase approver based on dollar thresholds, and either approved or rejected. For a single-subsidiary company with straightforward spending authority, it works.
