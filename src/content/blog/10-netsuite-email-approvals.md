@@ -26,7 +26,7 @@ Put enough information in the email that the approver never needs to open NetSui
 
 Here's what a Greenlight approval email looks like:
 
-![Greenlight approval email showing full transaction details, delegation notice, line items, and segregation of duties warning](/images/approvalemail.jpeg)
+![Greenlight approval email showing full transaction details, delegation notice, line items, and segregation of duties warning](/images/emailnew.png)
 
 That's a real approval email. It includes the transaction header (amount, vendor, subsidiary, department, class, date, memo). Below that, a "What you need to know" summary highlighting the fields that matched the routing rule. Then the line items, so the approver sees exactly what's being purchased, not just a total.
 
@@ -76,6 +76,8 @@ Not if the system is built correctly. Greenlight's email approvals write back to
 
 Segregation of duties enforcement doesn't relax because the channel changed. If an approver created the transaction and tries to approve it from email, the same SoD rules apply. Warn, block, or log, depending on how the rule is configured. The compliance controls travel with the approval, not with the interface.
 
+A common follow-up question is what stops someone from forwarding the email and clicking Approve. There's an optional verification code for exactly that, covered in [are NetSuite email approvals secure](/resources/23-netsuite-email-approval-security/).
+
 ## Run the Numbers
 
 Take a mid-market NetSuite customer with 12 approval-only users, each paying $150/month for a license they use for 30 seconds at a time.
@@ -88,4 +90,4 @@ The approvers see more context in the email than most of them were reviewing in 
 
 ---
 
-**Cut NetSuite license costs without cutting compliance.** Greenlight's email approvals include full transaction context, line items, budget data, and SoD warnings — no login required. [See it in action →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)
+**Cut NetSuite license costs without cutting compliance.** Greenlight's email approvals include full transaction context, line items, budget data, and SoD warnings, no login required. [See it in action →](https://meetings-eu1.hubspot.com/patrick-olson?uuid=bfd45059-ae2d-4014-b832-419301f042e9)
